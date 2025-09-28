@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#64173' class='nav-link mb-2'>개요</a>
+<a href='#64174' class='nav-link mb-2'>신청인주장</a>
+<a href='#64175' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#64176' class='nav-link mb-2'>인정사실</a>
+<a href='#64177' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2021 판정 제 316호 (2400):(240020210002316)</h2>
+<h2 id='64173'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청인이 요양급여 신청한 상병 '우중엽 전구폐암(상피내선암종)'은 산업재해보상보험법 제37조제1항제2조의 업무상 질병으로 인정된다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○ (기타 개인정보 생략)(2021. 9. 14.)호에 따른 판정 요청<br><b>	</b> <br><b>	</b> 신청내용<br><b>	</b>신청인은 1985. 4. 12.부터 위 소속 사업장 선실의장부 등에서 근무하였고, 2018. 10. 15.에 의료기관에서 신청 상병으로 진단 받고 심의 의뢰 기관에 요양급여신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='64174'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장<br><b>	</b>신청인은 업무수행과정에서 폐암의 원인물질을 취급하였고 상시적으로 노출되었으며 최초 노출된 시기, 노출된 업무시간, 업무환경 등에 비추어 봤을 때 신청인의 폐암이 이로 인해 발생하였다고 주장한다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='64175'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론<br><b>	</b>우리 위원회에서 신청인의 업무 내용과 기간, 업무의 양과 강도, 발병 경위, 상병 상태, 과거 병력 및 연령 등을 종합적으로 검토한 결과는 다음과 같다.<br><b>	</b>신청인은 업무수행과정에서 폐암의 원인물질을 취급하였고 상시적으로 노출되었으며 최초 노출된 시기, 노출된 업무시간, 업무환경 등에 비추어 봤을 때 신청인의 폐암이 이로 인해 발생하였다고 주장한다.<br><b>	</b>제출된 의학 영상 및 진료 기록에서 신청 상병 '우중엽 전구폐암(상피내선암종)'은 확인된다는 의학적 소견이다.<br><b>	</b>인사기록카드 등에서 신청인은 1985년 4월부터 약 31년 7월간 선박 스프레이 도장 업무 등을 한 사실이 확인된다.<br><b>	</b>구체적인 업무 내용으로는 그라인더로 선박 표면을 다듬고 스프레이 건 분사 작업을 수행하였는데,<br><b>	</b>신청인은 국제암연구소에서 폐암 발생 위험을 높이는 확실한 발암작업(Group 1)인 도장작업을 수행 한 점, 노출기간이 해당 상병을 유발할 정도로 충분히 긴 점 등을 고려하였을 때, 신청 상병과 업무와의 상당인과관계가 인정된다는 것이 참석한 위원들의 일치된 의견이다.<br><b>	</b>따라서, 신청인이 요양급여 신청한 상병 '우중엽 전구폐암(상피내선암종)'은 산재보험법 제37조제1항제2조의 업무상 질병으로 인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='64176'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로관계<br><b>	</b>1) 소속 사업장 <br><b>	</b><br><br><b>	</b>○ 사업장명: □□□□□(주) / 사업종류: 강선건조 또는 수리업 <br><b>	</b><br><br><b>	</b>○ 종사상 지위: 상용 / 고용형태: 정규직 <br><b>	</b><br><br><b>	</b>○ 직종: 도장 및 도금기 조작원 <br><b>	</b><br><br><b>	</b>○ 근무기간 및 담당 업무<br><b>	</b>- 1985. 4. 12. ~ 2010. 12. 31.(25년 8월) 선실의장부 외, 인사기록카드<br><b>	</b>- 2011. 1. 1. ~ 2016. 12. 31.(5년 11월) 선실생산2부, 인사기록카드 <br><b>	</b><br><br><b>	</b>○ 통상 근무시간: 1일 평균 8시간, 1주 평균 5일, 1주 평균 40시간 <br><b>	</b><br><br><b>	</b>○ 근로형태: 고정 주간근무 <br><b>	</b><br><br><b>	</b>○ 현 직종 관련 총 경력: 31년 7월(선실의장부 등) <br><b>	</b><br><br><b>	</b>나. 업무내용<br><b>	</b>1) 담당업무 및 작업환경 <br><b>	</b><br><br><b>	</b>○ 담당 업무<br><b>	</b>- 선박 스프레이 도장<br><b>	</b>- 그라인더로 선박 표면 다듬고 스프레이 건 분사<br><b>	</b>- (작업비중) 그라인더 작업(30~40%), 스프레이 도장(50~60%), 그 외 10%는 용접등으로 마무리 <br><b>	</b><br><br><b>	</b>○ 작업환경<br><b>	</b>- (노출형태) 먼지, 흄<br><b>	</b>- (1일 평균 노출 시간) 1일 4시간 이상(사업장은 2~4시간 주장)<br><b>	</b>- (착용한 보호장구) 보호복, 마스크, 장갑<br><b>	</b>- (환기시설) 국소배기장치<br><b>	</b>- 실내작업 90%, 실외작업(개방된 장소) 10%(사업장은 실내 40%, 실외 60% 주장)<br><b>	</b>2) 신청인 노출 가능한 유해물질 <br><b>	</b><br><br><b>	</b>○ 신청인 주장<br><b>	</b>- 석면에 노출, 스프레이 도장업무에 종사, 용접흄에 노출된다는 주장 <br><b>	</b><br><br><b>	</b>○ 보험가입자 의견<br><b>	</b>- 도장작업 특성상 유기용제를 취급하고 있으나 방독마스크 등의 각종 보호구를 착용하며 작업하고 있으며, 폐암의 유발물질에 될 수 있는 분진 등에 직접적으로 노출되는 작업이 아니라는 의견 <br><b>	</b><br><br><b>	</b>○ 물질안전보건 자료<br><b>	</b><주요 사용 제품><br><b>	</b>- EH2590-A-1278 [AE3094ENB667]: 중방식 EPOXY 프라이머<br><b>	</b>- EH2590-B: 중방식 EPOXY 경화제<br><b>	</b>- Jotacote Universal N10 Comp A: 페인트<br><b>	</b>- Jotacote Universal N10 Comp 8: 페인트용 경화제<br><b>	</b>- UNIPRIME 100HS GRAY BASE: 페인트<br><b>	</b>- UNIPRIME 100 HS HARDENER: 페인트용 경화제<br><b>	</b>- Hardtop AX K II Comp A: 페인트<br><b>	</b>- Hardtop AX K II Comp B: 페인트용 경화제<br><b>	</b>- NIPPON UoMARINE FINISH WHITEIN-9.5] BASE: 페인트<br><b>	</b>- NIPPON U-MARINE FINISH HARDENER: 페인트용 경화제<br><b>	</b>- LT313-1000: 중방식 알카드유성 마감도료<br><b>	</b>- EH4600PTA-1000: 중방식 EPOXY 하이빌드 프라이머 등 <br><b>	</b><br><br><b>	</b>다. 업무관련성 전문조사 필요성에 관한 자문 결과 <br><b>	</b><br><br><b>	</b>○ 업무관련성 전문조사 불필요<br><b>	</b>- 신청인은 1985년 4월부터 2016년 12월까지 약 31년 9개월간 □□□□□에서 도장공으로 근무하였고, 2018년 7월 원발성 폐암을 진단 받음. 도장작업은 국제암연구소에서 폐암 발생 위험을 높이는 확실한 발암작업(group 1)임. 도장작업과 폐암의 관련성이 보도되고 있고, 기존의 조사된 사례가 충분하며 상피내선암은 폐암의 전단계로 폐암과 유사하게 취급할 수 있음, 장기간의 노출력이 확인되고 충분한 잠재기를 지나 진단되어 추가적인 전문조사의 필요성은 낮음 <br><b>	</b><br><br><b>	</b>라. 과거력 등<br><b>	</b>1) 건강보험 요양급여 내역(재해일자: 2018. 10. 18.) <br><b>	</b><br><br><b>	</b>○ 2015년<br><b>	</b>- D34. 갑상선의 양성신생물[12월(1회)] <br><b>	</b><br><br><b>	</b>○ 2016년<br><b>	</b>- D34. 갑상선의 양성신생물[3월(1회)] <br><b>	</b><br><br><b>	</b>○ 2017년<br><b>	</b>- D134. 간의 양성신생물[5월(1회)] <br><b>	</b><br><br><b>	</b>○ 2018년<br><b>	</b>- J459. 상세불명의 천식[4월(1회), 5월(2회), 7월(1회)]<br><b>	</b>- D126. 상세불명의 결장의 양성신생물[8월(2회)]<br><b>	</b>- C187. 구불결장의 악성신생물[9월(3회), 10월(3회)]<br><b>	</b>- C19. 직장구불결장접합부의 악성신생물[9월(1회), 10월(1회)] <br><b>	</b><br><br><b>	</b>○ 그 외 ‘상세불명의 기관지염’으로 진료 받은 이력 확인됨<br><b>	</b>2) 건강검진결과 <br><b>	</b><br><br><b>	</b>○ 2011. 3. 21.<br><b>	</b>- 종합소견: 정상B/ 흉부방사선 검사(정상) <br><b>	</b><br><br><b>	</b>○ 2012. 4. 5.<br><b>	</b>- 종합소견: 정상B/ 흉부방사선 검사(정상) <br><b>	</b><br><br><b>	</b>○ 2013. 5. 30.<br><b>	</b>- 종합소견: 정상B/ 흉부방사선 검사(정상) <br><b>	</b><br><br><b>	</b>○ 2014. 3. 26.<br><b>	</b>- 종합소견: 정상B/ 흉부방사선 검사(정상) <br><b>	</b><br><br><b>	</b>○ 2015. 8. 25.<br><b>	</b>- 종합소견: 정상B/ LDL-콜레스테롤 159mg/dl/흉부방사선 검사(정상) <br><b>	</b><br><br><b>	</b>○ 2018. 8. 14.<br><b>	</b>- 종합소견: 정상B/ 의심질환: 간질환/ 흉부방사선 검사(정상)<br><b>	</b>3) 과거 산재처리 이력 <br><b>	</b><br><br><b>	</b>○ 1996. 3. 25.<br><b>	</b>- (소속 사업장) □□□□□(주)<br><b>	</b>- (재해경위) 물건 들다 삐끗<br><b>	</b>- (신청 상병) 요부염좌, 제4-5요추간 추간판 탈출증 등<br><b>	</b>- (처분결과) 승인 <br><b>	</b><br><br><b>	</b>○ 2017. 8. 21.<br><b>	</b>- (소속 사업장) □□□□□(주)<br><b>	</b>- (재해경위) 소음으로 인한 업무상 질병<br><b>	</b>- (신청 상병) 양쪽 소음성 난청<br><b>	</b>- (처분결과) 불승인<br><b>	</b>- (처분사유) 1,2차 특진 후 통합심사결과 - 신뢰도가 낮아 위난청으로 판단됨 <br><b>	</b><br><br><b>	</b>○ 2020. 7. 24.<br><b>	</b>- (소속 사업장) □□□□□(주)<br><b>	</b>- (재해경위) 신체부담작업으로 인한 업무상 질병<br><b>	</b>- (신청 상병) 좌측 견관절 회전근개 부분파열 등<br><b>	</b>- (처분결과) 불승인<br><b>	</b>- (처분사유) 퇴직 후 상당기간 도과 후 진단 받음<br><b>	</b>4) 기타 <br><b>	</b><br><br><b>	</b>○ 신체조건: 키 170.6cm 체중 78.9kg <br><b>	</b><br><br><b>	</b>○ 음주 및 흡연<br><b>	</b>- 음주: -<br><b>	</b>- 흡연: -<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='64177'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견<br><b>	</b>1) 발병경위 및 요양과정 <br><b>	</b><br><br><b>	</b>○ 2018. 10. 10. ○○○○○<br>        <br><b>	</b>- 환자 검진상 발견된 s-colon polyp 으로 ○○ 내원하여 ESD 시행하였고 Submucosal invasion 소견 및 margin involvement 소견으로 수술적 치료 위해 내원함<br><b>	</b>2) 주치의 소견<br><b>	</b>- 폐 우중엽의 전구폐암 진단(2018.10.18.)<br><b>	</b>3) 자문의 소견<br><b>	</b>- 의무기록지 검토 결과 ‘우중엽 전구폐암(상피내선암종)’확인되며, 요양기간(2018. 10. 18. ~ 2021. 12. 31.) 타당함.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

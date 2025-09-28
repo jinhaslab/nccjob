@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#100257' class='nav-link mb-2'>개요</a>
+<a href='#100258' class='nav-link mb-2'>신청인주장</a>
+<a href='#100259' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#100260' class='nav-link mb-2'>인정사실</a>
+<a href='#100261' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2019 판정 제 102호 (3400):(340020190002102)</h2>
+<h2 id='100257'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청 상병 “추간판탈출증 요추 제1-2번간”은  업무상 질병으로 인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b>지사:○○, 접수번호:(기타 개인정보 생략), 심의의뢰처리일자:2019.09.03<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 신청인은 2018.12.26. 10:30경 조경작업을 하면서 넘어지는 나무를 무리하게 잡고 있다가 나무의 중량이 생각보다 무거워 허리에 극심한 통증을 느꼈으며, 병원에 내원하여 신청 상병으로 진단 받고 최초요양급여신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='100258'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인은 2018.12.26. 조경작업을 하면서 넘어지는 나무의 중량을 생각하지 않고 무리하게 잡고 있다가 신청 상병이 발병하였다는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='100259'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서 신청인의 연령, 신체조건, 요양급여 신청경위, 경력, 상병 치료경위 및 경과, 작업환경, 작업 종사기간 및 근무시간, 작업 내용, 과거 병력, 진료기록, 신청인 및 사업주의 진술내용 등 조사된 내용을 토대로 심의한 결과는 다음과 같다. <br><b>	</b><br><br><b>	</b>○ 신청 상병 “추간판탈출증 요추 제1-2번간”은 진료기록, MRI 등에서 볼 때 급성 파열성 추간판 탈출증이라는 의학적 소견이며, 업무 중 발생한 사고와도 경위가 일치하므로 신청 상병은 업무 중 사고로 인해 유발되어 발생하였을 가능성이 높아 신청 상병과 업무와의 상당인과관계가 인정된다는 것이 위원들의 공통된 의견이다. <br><b>	</b><br><br><b>	</b>나. 따라서 신청인의 요양급여 신청 상병은 산업재해보상보험법 제37조 제1항 제2호에 의한 업무상 질병으로 인정한다. <br><b>	</b></p>
+<hr>
+<h2 id='100260'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실<br><b>	</b>심의의뢰기관 조사내용에 의하면, <br><b>	</b><br><br><b>	</b>○ (근무경력) 신청인은 재해일 기준 만 58세 남성(170cm, 65kg, 오른손잡이)으로 동사업장에서 1990.11.05.부터 약 28년 1개월간 운전업무를 수행하였음이 확인된다. <br><b>	</b><br><br><b>	</b>○ (근무형태) 신청인은 주간고정근무자로 근무시간은 08:00~18:00, 식사시간은 12:00~13:00인 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (과거직력) 4대보험 자료 등으로 확인한 신청인의 과거직력은 다음과 같다.<br><b>	</b>- 신청인은 ○○○○사(1982.10.05.~1989.10.31., 약 7년 1개월), ○○(1989.12.16.<br><b>	</b>~1990.04.21., 약 4개월), ○○○○사(1990.04.22.~1990.10.30., 약 6개월)에서도 1톤 봉고차량을 운전하여 납품업무를 수행하였다는 진술이다. <br><b>	</b><br><br><b>	</b>○ (업무내용 및 신체부담 작업) <br><b>	</b><br><br><b>	</b>가. 업무내용<br><b>	</b>1) 운전업무<br><b>	</b>- 1990.11.05.~1999.12.31.(약 9년 1개월) : 스타렉스 12인승 주로 운행<br><b>	</b>- 2000.01.01.~2010.12.31.(약 11년) : 스타렉스 9인승 주로 운행<br><b>	</b>- 2011.01.01.~2018.12.26.(약 8년) : 34인승 이동 안전용 교육 버스 운행<br><b>	</b>2) 서류정리 및 청사 관리, 유지 보수업무 등<br><b>	</b>- 주 1~2일 정도 운행일지 등 서류 정리, 청사 관리원의 업무를 도와 조경수 관리, 청소 업무 등 수행<br><b>	</b>3) 운행시간<br><b>	</b>- 교육시간 및 출장지에 따라 출발시간이 다르며, 출장 교육은 주 3일 정도로  일평균 운전시간은 약 3시간 정도이고, 월 1회 거창 방문 시 일평균 운전시간 약 4시간 소요 <br><b>	</b><br><br><b>	</b>나. 작업자세<br><b>	</b>- 상시 작업으로 일평균 3시간 이내(37% 정도) 작업, 굽히는 자세, 좌우로 회전(비틀림)하거나 꺾는 자세, 정적 자세, 반복 동작(분당 2회 이상) <br><b>	</b><br><br><b>	</b>다. 기타사항<br><b>	</b>- 신청인이 재해 경위로 주장하는 조경수 전지작업은 연말에 1회성으로 수행한 업무이고, 평소 사무실 근무시 서류정리 등 허리에 부담작업은 하지 않는다는 신청인의 진술이 확인된다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='100261'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ (건강보험 수진내역 등) 신청인의 과거 10년간 건강보험 수진내역에서 신청 상병과 관련하여 진료 받은 이력은 다음과 같이 확인된다.<br><b>	</b>- 2009.07.10. ○○신경외과의원, ‘좌골신경통을동반한요통,요추부’<br><b>	</b>- 2010.09.24.~2010.10.04.(2회) ○○, ‘요통,요추부’<br><b>	</b>- 2010.10.25.~2010.12.20.(7회) ○○, ‘기타척추증,흉요추부’<br><b>	</b>- 2012.03.05. ○○, ‘요추및골반의기타및상세불명부분의염좌및긴장’<br><b>	</b>- 2013.11.25. □□□, ‘요통,천추및천미추부’<br><b>	</b>- 2017.01.16.~2017.01.17.(2회) □□□, ‘좌골신경통을동반한요통,요추부’ <br><b>	</b><br><br><b>	</b>○ (산재 이력) 과거 산재 (불)승인 이력은 없는 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (주치의사) 신청인의 주치의사는 ‘쓰러지는 나무를 받들고 있다가 통증 발생함’이라는 소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (자문의사) 심의의뢰기관 자문의는 ‘신청 상병 인지되나 퇴행성 변화가 뚜렷하여 작업력 조사를 요합니다’라는 소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (전문가평가) 심의의뢰기관 직업환경의학 전문의는 ‘약 30년 정도 34인승 버스 및 봉고차량 운전업무를 수행한 자로 주로 앉은 자세로 운전과 중량물 취급하는 경우도 적고 운전횟수가 주 3회 정도 4시간 이내이므로 업무관련성이 낮을 것으로 사료됨’이라는 평가이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#248207' class='nav-link mb-2'>개요</a>
+<a href='#248208' class='nav-link mb-2'>신청인주장</a>
+<a href='#248209' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#248210' class='nav-link mb-2'>인정사실</a>
+<a href='#248211' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2019 판정 제 286호 (6400):(640020190001286)</h2>
+<h2 id='248207'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청인이 요양급여 신청한 상병명 “허리부위 속질핵 탈출(요추 4-5번 추간판 파열)”은  업무상 질병으로 인정된다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○ (기타 개인정보 생략)(2019.08.27)호에 의한 판정요청<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 신청인은 “○○ 환경미화계(이하 ‘소속 사업장’이라 한다.)”에 근무한 68년생 남자로, 소속 사업장에서 근무하다 의료기관 내원하여 진료한 결과 “허리부위 속질핵 탈출(요추 4-5번 추간판 파열)(이하 ‘신청 상병’이라 한다.)”을 진단받아 최초요양급여신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='248208'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인은 의료기관 내원 신청 상병 진단받고 산재보험 요양급여신청서를 제출하였으며 업무로 인하여 신청 상병이 발생하여 업무상 질병으로 인정되어야 한다고 주장한다.<br><b>	</b>- 2012년 7월 ○○ 환경미화원으로 입사하여 상차보조원(쓰레기수거업무, 재활용품수거, 재활용분리)으로 근무하였고, 최근 ○○○ 공원에서 업무를 하다가 2019년 7월 업무를 마치고 하리 및 하반신의 통증이 심하여 ○○에서 요추 4-5번 추간판 파열 수술을 받고 치료중에 있습니다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='248209'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서 신청인의 연령, 신체조건, 재해경위, 경력, 작업환경, 작업 종사기간 및 근무시간, 작업내용, 과거병력, 진료기록, 영상자료, 주치의 소견, 자문의사 소견 등 일체를 검토한 결과,<br><b>	</b>1) 신청인은 상기 신청 내용상 재해발생 경위 및 주장사항과 같이 소속사업장에서 업무를 수행해 오면서 일련의 작 업과정에서 신체부담이 누적되어 신청 상병이 발생하였다고 주장하고 있는 바,<br><b>	</b>2) 관련 검사 및 의무기록 등에서 신청 상병이 확인되는 점,<br><b>	</b>3) 신청인은 소속사업장에서 2012.07.입사하여 약 7정도 환경미화원(상차보조원) 업무를 수행하였던 점,<br><b>	</b>4) 신청인의 업무 내용, 작업 강도, 작업 자세 등을 종합적으로 고려하여 볼 때, 신청인은 부적절한 작업 자세를 취하거나 중량물 취급 및 반복되는 작업동작 등으로 인한 신청 상병을 유발할 정도의 신체 부담 작업을 장기간 강도 높게 수행하였던 것으로 판단되므로 업무와 상병간의 상당인과관계가 인정된다는 것이 참석한 위원들의 공통된 의견이다. <br><b>	</b><br><br><b>	</b>나. 이상의 사실을 종합하여 판단해 보면, 신청인이 요양급여 신청한 상병명 “허리부위 속질핵 탈출(요추 4-5번 추간판 파열)”은 「산업재해보상보험법」제37조 제1항 제2호에 의한 업무상 질병으로 인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='248210'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로조건 <br><b>	</b><br><br><b>	</b>○ 신청인은 상기 소속 사업장에 2012.01.07. 입사하여 진단일 기준 약 7년정도 환경미화원(상차보조원)의 업무를 수행하였다. <br><b>	</b><br><br><b>	</b>○ 신청인의 근무형태는 고정주간업무로 1일 평균 8시간. 1주 평균 5일 40시간 근무한 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ 상기 사업장 입사이전 직력은 아래와 같이 확인된다.<br><b>	</b>- 1995년부터 2008년까지   개인사업  영업<br><b>	</b>- 2008.12.06. ~ 2009.03.05. ○○○○ 택배업<br><b>	</b>- 2010.02.17. ~ 2011.01.01. □□□□ 영업<br><b>	</b>- 2011.02.02. ~ 2011.04.11. ㈜△△△△ 영업 <br><b>	</b><br><br><b>	</b>나. 재해경위 <br><b>	</b><br><br><b>	</b>○ 신청인은 의료기관 내원 신청 상병 진단받고 산재보험 요양급여신청서를 제출하였다. <br><b>	</b><br><br><b>	</b>다. 업무내용<br><b>	</b>- 오전 6시에 업무를 시작하여 17시까지 수행함.<br><b>	</b>- 3인 1조로 작업이 진행되며 운전하는 사람을 제외하고 2명이서 맡겨진 구역을 돌면서 쓰레기봉투를 수거하여 상차작업을 실시.<br><b>	</b>- 오전 11시까지 5시간 쓰레기봉투 수거작업을 마친 뒤 중식시간 및 휴식시간을 가짐<br><b>	</b>- 14시부터 17시까지 2차 작업을 실시.<br><b>	</b>- 상차 작업은 아래에서 쓰레기 봉투를 들어서 차에 올려주는 사람과 차량 위에서 쓰레기 봉투를 받아 쌓는 작업을 번갈아 가면서 실시하며 하루약 300~400개정도 작업이며, 무거운 것은 30~40kg이 넘는것도 많으며 주로 20kg정도의 무게라고 보면 됨 <br><b>	</b><br><br><b>	</b>라. 기타 확인사항 <br><b>	</b><br><br><b>	</b>○ 신청인의 신체조건은 신장 170cm, 체중 68kg 오른손잡이로 특별한 운동 및 취미생활은 없는 것으로 확인된다. <br><b>	</b><br><br><b>	</b>마. 위험요인 분석 및 전문가 평가 <br><b>	</b><br><br><b>	</b>○ 소속기관 전문가 평가 결과,<br><b>	</b>- 개인력 : 52세 남성<br><b>	</b>- 직 력 : 환경미화원 7년(2012~2019)<br><b>	</b>- 부담작업 : 중량물 취급 허리의 과도한 굴곡, 꺽임, 회전 <br><b>	</b><br><br><b>	</b>○ 결 론 : 5년이상 허리부담작업에 종사하였으므로 업무와 질병과의 관련성 높음<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='248211'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ (진료기록) 발병 이전 최근 10년간 신청인의 건강보험 수진자료를 확인한 결과 신청부위 관련으로 진료 받은 내역은 아래와 같다.<br><b>	</b>- 2014.08.12. ○○ 상세불명의 등통증, 경흉추부<br><b>	</b>- 2014.08.14. ○○ 상세불명의 등통증, 경흉추부<br><b>	</b>- 2014.08.17. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2014.08.25. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2014.08.28. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2015.12.04. ~ 12.18. ○○ 11회  상세불명의 등통증, 경흉추부<br><b>	</b>- 2015.12.28. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2016.03.09. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2016.03.10. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2018.08.03. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2018.08.04. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2018.08.08. ○○   상세불명의 등통증, 경흉추부<br><b>	</b>- 2019.03.25. ○○  요추의염좌및긴장<br><b>	</b>- 2019.06.25. ○○  요추의염좌및긴장<br><b>	</b>- 2019.06.27. □□□□  요통<br><b>	</b>- 2019.06.28. □□□□  요통<br><b>	</b>- 2019.06.29. □□□□  신경뿌리병증을 동반한 요추 및 기타추간판장애 <br><b>	</b><br><br><b>	</b>○ (주치의사) 주치의사는 “내원 당시 시행한 신체검사상 좌하지 근력 4등급 및 말목 아래로 3등급 측정되었으며 시행한 제반 검사상 요추 4,5번 추간판의 파열소견 보이며, 2009.07.02. 요추4-5번 추간판 절제술 시행해다”는 소견이다. <br><b>	</b><br><br><b>	</b>○ (자문의사) 소속기관 자문의사는 “관련 자료의 검토결과 요추부 MRI에서 상기 상병이 관찰되는 자로 작업관련 부담여부를 고려하여야 한다”는 소견이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

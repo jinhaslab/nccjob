@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#48167' class='nav-link mb-2'>개요</a>
+<a href='#48168' class='nav-link mb-2'>신청인주장</a>
+<a href='#48169' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#48170' class='nav-link mb-2'>인정사실</a>
+<a href='#48171' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2020 판정 제 821호 (2400):(240020200001821)</h2>
+<h2 id='48167'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청인이 요양급여 신청한 상병 ‘Idiopathic pulmonary fibrosis(섬유증을 동반한 기타 간질성 폐질환)’은 의 업무상 질병으로 인정된다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○○○ (기타 개인정보 생략)(2020. 8. 4.)호에 따른 판정 요청<br><b>	</b> <br><b>	</b> 신청내용<br><b>	</b>신청인은 1997년 11월부터 다수의 건설현장에서 배관공 및 용접공으로 근무하였고, 2020. 1. 29.에 신청 상병으로 진단 받고 심의 의뢰 기관에 요양급여 신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='48168'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장<br><b>	</b>신청인은 약 30년간 다수의 건설공사 현장에서 근무하며 다량의 결정형 유리규산 및 석재, 모래분진에 노출되어 '간질성폐질환'이 발병되었다고 주장하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='48169'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론<br><b>	</b>우리 위원회에서 신청인의 업무 내용과 기간, 발병 경위, 과거 병력, 연령 등을 종합적으로 검토한 결과는 다음과 같다.<br><b>	</b>신청인은 약 30년간 다수의 건설공사 현장에서 근무하며 다량의 결정형 유리규산, 석재 및 모래 분진에 노출되어 신청 상병이 발병하였으므로 업무상 질병이라고 주장하였다.<br><b>	</b>진료 기록 및 관련 검사 결과 등에서 신청 상병 ‘Idiopathic pulmonary fibrosis(섬유증을 동반한 기타 간질성 폐질환)’이 확인된다.<br><b>	</b>고용보험 가입이력 등에서 약 1997년 11월부터 약 12년 1개월간 각종 건설현장에서 근무한 사실이 확인되었는데, 주로 배관공과 용접공으로 근무하였음이 확인된다.<br><b>	</b>해당 작업을 수행하면서 건설현장에서 발생할 수 있는 결정형유리규산과 용접 작업중에 발생할 수 있는 금속 흄에 장기간 노출되었음이 확인되므로 신청 상병과 업무와의 상당인과관계가 인정된다는 것이 참석한 위원들의 공통된 의견이다.<br><b>	</b>따라서, 신청인이 요양급여 신청한 상병 ‘Idiopathic pulmonary fibrosis(섬유증을 동반한 기타 간질성 폐질환)’은 산재보험법 제37조제1항제2호의 업무상 질병으로 인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='48170'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로관계<br><b>	</b>1) 소속 사업장 <br><b>	</b><br><br><b>	</b>○ 사업장명: ○○○○○ 주식회사 ? (사업명 생략)<br>         <br><b>	</b><br><br><b>	</b>○ 업종: 건축건설공사 <br><b>	</b><br><br><b>	</b>○ 종사상 지위: 상용 / 고용형태: 비정규직 <br><b>	</b><br><br><b>	</b>○ 직종: 배관공 <br><b>	</b><br><br><b>	</b>○ 근무기간 및 담당 업무<br><b>	</b>- 1981. ~ 1983.(2년) 용접공, ○○, 진술<br><b>	</b>- 1990. ~ 1996(6년) 배관공 및 용접공, 건설현장, 진술<br><b>	</b>- 1997. 11. ~ 2019. 1.(11년 2월) 배관공 및 용접공, 건설현장, 고용보험<br><b>	</b>- 2019. 2. ~ 재해일까지(11월) 배관공 및 용접공, 4대보험 <br><b>	</b><br><br><b>	</b>○ 통상 근무형태: 1일 평균 10시간, 1주 평균 6일, 1주 평균 60시간 <br><b>	</b><br><br><b>	</b>○ 근로형태: 고정주간근무 <br><b>	</b><br><br><b>	</b>○ 현 직종 관련 총 경력<br><b>	</b>- 약 12년 1월(배관공 및 용접공),<br><b>	</b>- 신청인은 1981년부터 30년간 작업함을 주장 <br><b>	</b><br><br><b>	</b>나. 업무내용<br><b>	</b>1) 담당업무 및 작업환경 <br><b>	</b><br><br><b>	</b>○ 담당업무: 배관공 및 용접공(설비)<br><b>	</b>2) 직업력 <br><b>	</b><br><br><b>	</b>○ 현재 사업장 근무이력<br><b>	</b>- ○○○○○(주): 2019년 2월~ 현재<br><b>	</b>- 직종 및 작업내용 : 설비(배관공 및 용접공) <br><b>	</b><br><br><b>	</b>○ 과거 직업력(시기, 사업장명, 직종 및 작업내용)<br><b>	</b>- 1981 ~ 1983., ○○ 해양생산부, 용접공<br><b>	</b>- 1990 ~ 1996., 다수의 건설공사 현장, 배관공 및 용접공<br><b>	</b>- 1997. 11. ~ 1999. 11., ○○(주), 배관공 및 용접공<br><b>	</b>- 1999. 12. ~ 2001. 3., ○○공영(주), 배관공 및 용접공<br><b>	</b>- 2002., 다수의 건설공사 현장, 배관공 및 용접공<br><b>	</b>- 2003. 11. ~ 2005. 8., ○○○○(주), 배관공 및 용접공<br><b>	</b>- 2005. 8. ~ 2007. 8., ㈜□□□□, 배관공 및 용접공<br><b>	</b>- 2007. 9. ~ 2008. 6., ○○(주), 배관공 및 용접공<br><b>	</b>- 2008. 8. ~ 2008. 10., ㈜△△△△, 배관공 및 용접공<br><b>	</b>- 2009. 2. ~ 2009. 3., □□공영(주), 배관공 및 용접공<br><b>	</b>- 2009. 6. ~ 2011. 10., △△△△공영(주), 배관공 및 용접공<br><b>	</b>- 2011. 12. ~ 2011. 12., ㈜◇◇◇◇◇, 배관공 및 용접공<br><b>	</b>- 2012. 2. ~ 2013. 3., ㈜○엔지니어링, 배관공 및 용접공<br><b>	</b>- 2013. 5. ~ 2014. 3., ㈜□□엔지니어링, 배관공 및 용접공<br><b>	</b>- 2014. 4. ~ 2016. 2., ○○○○○(주), 배관공 및 용접공<br><b>	</b>- 2016. 3. ~ 2019. 1., ♤♤♤♤ 주식회사, 배관공 및 용접공 <br><b>	</b><br><br><b>	</b>다. 업무관련성 전문조사 필요성에 관한 자문회의 결과<br><b>	</b>- 상기인은 약 30년간 다수의 건설현장에서 배관, 용접공으로 근무하였고 특발성폐섬유화증 진단받음.<br><b>	</b>- 분진 노출과 간질성폐렴의 관련성은 인정되고 있으며 신청인의 대부분의 직업력이 객관적 자료에 의해 확인되고 직종 및 근무기간 고려할 때 누적 분진 노출 수준은 높을 것으로 판단되어 추가적인 전문조사는 불필요함. <br><b>	</b><br><br><b>	</b>라. 과거력 등<br><b>	</b>1) 건강보험 수진내역 <br><b>	</b><br><br><b>	</b>○ 2019년<br><b>	</b>- R91. 폐의진단영상검사상이상소견, 2회<br><b>	</b>- J849. 상세불명의간질성폐질환, 1회<br><b>	</b>2) 건강검진 결과 <br><b>	</b><br><br><b>	</b>○ 2019년<br><b>	</b>- 페CT 검사에서 양폐 주로 흉막하 부위에 망상음영, 간유리음영, 선상음영 등 섬유화가 있고, 삼음간질폐렴과 같은 간질성 폐질환 소견입니다. 양폐 상엽에 늑막하 폐기포 관찰됩니다.<br><b>	</b>- 폐기능 검사에서 약간의 폐기능 이상 소견이 관찰됩니다.(경도의 제한성 환기 장애)<br><b>	</b>3) 과거 산재처리 이력: -<br><b>	</b>4) 교통사고 여부: -<br><b>	</b>5) 기타 <br><b>	</b><br><br><b>	</b>○ 흡연<br><b>	</b><신청인 주장><br><b>	</b>- 5년 전부터 금연(20대 군 제대이후 흡연 하루 평균 10개피 흡연<br><b>	</b>- 금연 위해 6개월~1년간 흡연하지 않은 적이 많았다고 함<br><b>	</b><○○○○ 2019. 12. 4. 호흡기내과 의무기록지><br><b>	</b>- smomking history, ex-smoker quitting 4YA<br><b>	</b>- 흡연력(pack-yr), 1.5 pack/day×30year = 45 PY <br><b>	</b><br><br><b>	</b>○ 기초질환: 고지혈증 당뇨<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='48171'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견<br><b>	</b>1) 발병경위 및 요양과정<br><b>	</b><2019. 12. 4. ○○○○><br><b>	</b>- 호흡기내과(2019.12.4),chief complaint. abnormal chest PA, 양폐 흉막하 부위 망상금영, 간유리음성, 선상음영 등 섬유화 있어 의뢰됨.<br><b>	</b>2) 주치의 소견<br><b>	</b>- 용접, 배관 30여년 근무한 환자로 , 간질성 폐질환 소견으로 입원하여 조직검사시행 폐섬유화 확인 되어 약물 치료 중임<br><b>	</b>3) 자문의 소견<br><b>	</b>- 의무기록 검토결과 신청상병명 확인됨.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

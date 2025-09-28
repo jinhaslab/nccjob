@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#293488' class='nav-link mb-2'>개요</a>
+<a href='#293489' class='nav-link mb-2'>신청인주장</a>
+<a href='#293490' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#293491' class='nav-link mb-2'>인정사실</a>
+<a href='#293492' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2020 판정 제 590호 (7400):(740020200000590)</h2>
+<h2 id='293488'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청 상병 "모야모야병", "항인지질증후군"은 업무와 상당인과관계가 불인정된다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○의 업무상질병 인정 여부 판정 요청<br><b>	</b> <br><b>	</b> 신청내용<br><b>	</b>신청인은 2019.7.15.경 업무 중 두통이 느껴지며 시력이 흐려지고 구토를 하는 증상이 생겨 후송되었고 신청 상병 진단을 받아 요양급여신청서를 제출함.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='293489'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장<br><b>	</b>신청인은 민원응대 및 실적압박 등의 업무상 스트레스로 발생한 업무상 재해라는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='293490'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서 재해자의 업무 양·시간·강도·책임, 휴일·휴가 등 휴무시간, 교대제 및 야간근로 등 근무형태, 업무환경의 변화 및 적응기간, 정신적 긴장의 정도, 수면시간, 작업 환경, 그 밖에 성별, 건강상태 등을 종합하여 검토한 결과, <br><b>	</b><br><br><b>	</b>○ 신청인은 민원응대 및 실적압박 등의 업무상 스트레스로 발생한 업무상 재해라는 주장이다. <br><b>	</b><br><br><b>	</b>○ 의학적으로 영상 및 진료기록에서 “모야모야병”, “항인지질증후군”이 확인되나 이는 개인질환에 해당한다는 소견이다. <br><b>	</b><br><br><b>	</b>○ 심장혈관의 질환이 업무상 질병으로 인정되기 위해서는 고용노동부 고시(제2017-117호)- 「뇌혈관 질병 또는 심장 질병 및 근골격계 질병의 업무상 질병 인정 여부 결정에 필요한 사항」에 따라 심장혈관의 정상적인 기능에 뚜렷한 영향을 초래할 만한 급성 · 단기 · 만성적인 업무상의 가중 부담이 객관적으로 확인되어야 하는 바,<br><b>	</b>- (급성) 발병 전 24시간 이내에 돌발상황 및 급격한 업무환경의 변화는 없던 것으로 확인되었고,<br><b>	</b>- (단기) 발병 전 1주간 일상 업무에 종사하며 업무량이 30% 이상 증가하지 않았고, 발병 전 1주간 업무 시간은 이전 12주간(발병 전 1주간을 제외한 11주간)에 비해 30% 이상 증가하지 않았으며,<br><b>	</b>- (만성) 발병 전 4주간 1주당 평균 업무시간은 37시간 34분으로 만성과로 인정기준인 주당 평균 64시간을 미초과했으며, 발병 전 12주간 1주당 평균 업무시간은 40시간 44분으로 만성과로 인정기준인 주당 평균 60시간 및 52시간을 미초과한 것으로 확인되며, 업무부담 가중요인은 정신적 긴장이 높은 업무(고객민원 응대)로 확인된다. <br><b>	</b><br><br><b>	</b>○ 이상의 사실 및 의학적 소견 등을 종합하여 볼 때,<br><b>	</b>- 신청인의 업무 특성상 정신적 긴장 등의 부담 요소가 일부 확인되나<br><b>	</b>- 해당 상병은 개인질환의 자연적인 악화로 인한 것으로 판단되어<br><b>	</b>- 신청 상병과 업무의 상당인과관계가 불인정된다는 것이 참석위원들의 공통된 의견이다. <br><b>	</b><br><br><b>	</b>나. 따라서, 신청 상병 “모야모야병”, “항인지질증후군”은 『산업재해보상보험법』 제37조 제1항 제2호에 의한 업무상 질병으로 불인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='293491'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로관계 <br><b>	</b><br><br><b>	</b>○ 입 사 일 : 2013.11.1 <br><b>	</b><br><br><b>	</b>○ 직    종 : 콜센터 고객상담 <br><b>	</b><br><br><b>	</b>○ 근무형태 : 고정주간근무 <br><b>	</b><br><br><b>	</b>○ 근무시간 : 09:00~18:00(주 5일) <br><b>	</b><br><br><b>	</b>○ 휴식시간 : 점심시간 60분 <br><b>	</b><br><br><b>	</b>○ 근무이력<br><b>	</b>- 2013.11 ~ / ㈜○○○○○ / 고객상담 / 고용보험 <br><b>	</b><br><br><b>	</b>나.  <br><b>	</b><br>인정사실 <br><b>	</b><br><br><b>	</b>○ 업무내용<br><b>	</b>- 직종 : 상담팀장<br><b>	</b>- 업무내용 : 팀장업무를 수행(팀장 1, 부팀장 1, 팀원 18명으로 구성된 상담팀의 근태관리 및 실적관리, 업무지원, 민원처리 등)<br><b>	</b>- 구체적인 관리업무 형태 : ①상담원의 생산성관리 - 상담원의 업무량(통화시간,통화건수)을 적정 수준으로 관리( → 상담원이 미진시 향상될 수 있도록 교육 코칭 등을 하나, 건 수는 계량화가 어려움.), ②상담원의 통화품질(불친절 등) 향상을 위한 관리(→건 수는 계량화가 어려움), ③상담원이 민원발생하여 미해결시 민원통화(→계량화가 어려우나 대략 일당 2~3건씩 정도), ④상담원의 근태 관리 등 <br><b>	</b><br><br><b>	</b>다. 발병 이전 업무내용 <br><b>	</b><br><br><b>	</b>○ 돌발상황 또는 급격한 업무환경의 변화<br><b>	</b>－ 발병 당일 돌발상황 및 급격한 업무환경의 변화는 없던 것으로 조사되었다. <br><b>	</b><br><br><b>	</b>○ 단시간 동안의 업무상 부담<br><b>	</b>- 발병 전 1주일 이내 업무량, 강도, 책임, 환경의 변화 여부를 확인 한 바, 발병 전 1주 동안 일상 업무에 종사하며 업무의 양이 30%이상 증가하지 않았고, 총 업무시간은 44시간 32분으로서 발병 이전 12주간(발병 전 1주일 제외)의 주당 평균 업무시간 40시간 24분과 대비할 때 업무의 시간이 30%이상 증가하지 않았다. <br><b>	</b><br><br><b>	</b>○ 만성적으로 과중한 업무(발병 전 3개월 이상 연속적으로 과중한 부담 여부)<br><b>	</b>- 발병 전 3개월 이상 연속적으로 과중한 부담 여부에 대하여 발병 전 4주 동안 업무시간이 1주 평균 37시간 34분(64시간 미초과)이고, 발병 전 12주 동안 업무시간이 1주 평균 40시간 44분(60시간 및 52시간 미초과)이고, 업무부담 가중요인은 정신적 긴장이 큰 업무(고객민원 응대)로 조사되었다. <br><b>	</b><br><br><b>	</b>라. 관련자 진술내용 <br><b>	</b><br><br><b>	</b>○ 재해자<br><b>	</b>- 2019년 6월경 민원통화중 코피가 나고 두통이 발생하여 상급자에게 고객응대 근로자 보호 차원에서 업무의 일시적 중단을 요청했지만 반려되었음.<br><b>	</b>- 투입율 수치에 따라 업체의 점수를 매겨 콜센터 재계약 시 영향을 주므로 매주 월요일은 아파도 휴가를 못씀. <br><b>	</b><br><br><b>	</b>○ 보험가입자<br><b>	</b>- 직원관리에 있어 도급업체라는 이유로 ○○에 제약을 받는 사항은 없으며, 2018년 10월 18일부터 고객응대근로자 보호조치 시행으로 위와 같은 일이 발생되었을 경우 더욱더 그에 적절한 조치를 취하였을 것이나 업무의 일시적 중단 요청을 받은 적이 없음.<br><b>	</b>- 월요일도 휴가사용 가능하였고 단, 월요일은 콜 인입량이 많아 다수 인원이 요청할 경우 조절하여 사용. <br><b>	</b><br><br><b>	</b>마. 기타 조사내용 <br><b>	</b><br><br><b>	</b>○ 신체조건 : 신장 175cm, 체중 96kg <br><b>	</b><br><br><b>	</b>○ 음주여부 : 주 2회(소주 5잔) <br><b>	</b><br><br><b>	</b>○ 흡연여부 : 하루 10개비 <br><b>	</b><br><br><b>	</b>○ 운동 및 취미활동 : 달리기, 등산 <br><b>	</b><br><br><b>	</b>○ 산재보험 요양승인내역 : 없음<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='293492'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ 상병관련 건강보험 수진내역<br><b>	</b>- 없음 <br><b>	</b><br><br><b>	</b>○ 진료기록(2019.7.15. ○○)<br><b>	</b>- 주호소 : Weakness[Rt.side], 발병시기 2019.7.15. 12:00<br><b>	</b>- 상환 2주 전 아침 기상 후 일시적 Rt.side weakness있어왔다고 했고 한번 생기면 3-4시간 지속되다가 자연호전되었다고 하며 내원 2일 전 local에서 시행한 Brain MRI 상 Lt MCA M1 cutoff sign 확인되어 r/o MMD로 익일 NS 외래 수진 예정이었으나 금일 점심 Rt.side weakness 악화되는 것 같다고 하여 응급실 내원. <br><b>	</b><br><br><b>	</b>○ 건강검진 결과<br><b>	</b>- 2019.5.17. 검진<br><b>	</b>- 정상B(혈압 간기능) 일반질환의심, 최고 138 최저 84<br><b>	</b>* 비만: 식사량 조절(탄수화물) 및 규칙적인 운동으로 비만(체중조절) 관리바랍니다. *금연필요.,절주필요.,신체활동필요.,근력활동필요. *경계치 혈압으로 저염식의 식이요법과 규칙적인 운동 생활습관으로  혈압관리바랍니다.,* 간기능 수치가 정상치보다 높으므로 간장질환에 주의하시고 금주 및 추적 관찰하시기 바랍니다 <br><b>	</b><br><br><b>	</b>○ 주치의사 : 일반적인 발병원인은 현재 알려지지 않음. 유전자변이가 확인되는 환자가 있으나 재해자는 발견되지 않음. <br><b>	</b><br><br><b>	</b>○ 자문의사 : 영상 검사상 신청 상병이 확인됨<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    
