@@ -115,7 +115,19 @@
                 if (form) {
                   form.addEventListener('submit', function(e) {
                     console.log('🔥 Form submit event triggered!');
-                    console.log('🔥 Form data:', new FormData(form));
+                    const formData = new FormData(form);
+                    console.log('🔥 Form data entries:');
+                    for (let [key, value] of formData.entries()) {
+                      console.log(`  ${key}: ${value}`);
+                    }
+
+                    // 폼 필드들 직접 체크
+                    const allInputs = form.querySelectorAll('input, textarea, select');
+                    console.log('🔍 All form fields found:', allInputs.length);
+                    allInputs.forEach(input => {
+                      console.log(`  Field: ${input.name} = ${input.value} (type: ${input.type})`);
+                    });
+
                     alert('Form이 제출됩니다!');
                     // e.preventDefault(); // 주석 처리해서 실제 제출되도록
                   });
