@@ -68,23 +68,7 @@
             <input type="checkbox" name="smry_confirmed" {% if record.smry_confirmed %}checked{% endif %}> 고찰 확인<br>
           </div>
 
-          <!-- 기존 템플릿들 (숨김 처리) -->
-          <div style="display: none;">
-            <!-- Readonly 필드들 -->
-            {% include 'records/components/readonly_fields.html' %}
-
-            <h2>최초 & 최종 변경 내역
-              <button type="button" class="btn btn-secondary mt-2" id="rag-search-button" data-toggle="modal" data-target="#ragSearchModal">
-                RAG 검색
-              </button>
-            </h2>
-
-            <!-- 비교 테이블 -->
-            {% include 'records/components/comparison_table.html' %}
-
-            <!-- 확인 체크박스 -->
-            {% include 'records/components/confirmation_section.html' %}
-          </div>
+          <!-- 기존 템플릿들 (완전히 제거 - 중복 필드 방지) -->
 
           <div class="action-buttons">
             <button type="submit" onclick="console.log('저장 버튼 클릭됨'); alert('저장 버튼이 클릭되었습니다!'); return true;" style="background: red; color: white; padding: 15px; border: none; font-size: 16px;">💾 저장</button>
