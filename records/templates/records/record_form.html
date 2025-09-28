@@ -58,9 +58,7 @@
             <!-- job hidden 필드 -->
             <input type="hidden" name="job" value="{{ record.job|default:'' }}">
 
-            <!-- URL 필드들을 빈 값으로 설정 -->
-            <input type="hidden" name="pop_link" value="">
-            <input type="hidden" name="process_link" value="">
+            <!-- URL 필드들 제거 (Django 폼에서 자동 처리) -->
 
             <!-- 확인 체크박스들 -->
             <input type="checkbox" name="disease_confirmed" {% if record.disease_confirmed %}checked{% endif %}> 질병 확인<br>

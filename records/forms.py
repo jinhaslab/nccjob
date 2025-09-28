@@ -10,12 +10,16 @@ class DiseaseRecordForm(forms.ModelForm):
             'last_modified_by',
             'created_at',
             'changed_fields',
-            
+
             # --- 새로운 구조에 맞게 수정 ---
             'disease',           # ForeignKey 필드 (JS로 제어)
             'job',               # ForeignKey 필드 (JS로 제어)
             'exposure',          # ManyToManyField (JS로 제어)
-            
+
+            # --- URL 필드들 (검증 에러 방지) ---
+            'pop_link',          # URLField 검증 문제
+            'process_link',      # URLField 검증 문제
+
             # --- original 필드들 ---
             'original_ids',
             'original_disease_name',
