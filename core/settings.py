@@ -31,9 +31,11 @@ MEDIA_URL = 'data/'
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# TODO: Move to environment variable in production
 SECRET_KEY = 'django-insecure-rhqy**6_mx@-qvlsttgq=6oz4l7o#&fov$g$*)u@wukz4d8gq!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# Set to False in production
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
@@ -152,3 +154,16 @@ SESSION_COOKIE_SECURE = False  # 개발환경에서는 False (HTTPS가 아니므
 
 # iframe 사용을 위한 X-Frame-Options 설정
 X_FRAME_OPTIONS = 'SAMEORIGIN'  # 같은 도메인에서 iframe 허용
+
+# Additional Security Settings
+SECURE_BROWSER_XSS_FILTER = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_REFERRER_POLICY = 'same-origin'
+
+# Production Security (uncomment for production)
+# SECURE_SSL_REDIRECT = True
+# SECURE_HSTS_SECONDS = 31536000
+# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+# SECURE_HSTS_PRELOAD = True
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True

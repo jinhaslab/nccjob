@@ -40,84 +40,26 @@
           <!-- 필수 Hidden 필드들 -->
           <input type="hidden" name="ids" value="{{ record.ids|default:'' }}" />
 
-          <!-- Django Form 필드 직접 렌더링 (테스트용) -->
-          <div style="background: #ffffcc; padding: 15px; margin: 10px 0; border: 2px solid #orange;">
-            <h3>🔧 직접 Form 필드 (테스트용)</h3>
+          <!-- Readonly 필드들 -->
+          {% include 'records/components/readonly_fields.html' %}
 
-            <!-- smry 필드 -->
-            <label for="id_smry">고찰:</label><br>
-            <textarea name="smry" id="id_smry" rows="3" style="width: 100%;">{{ record.smry|default:'' }}</textarea><br><br>
+          <h2>최초 & 최종 변경 내역
+            <button type="button" class="btn btn-secondary mt-2" id="rag-search-button" data-toggle="modal" data-target="#ragSearchModal">
+              RAG 검색
+            </button>
+          </h2>
 
-            <!-- decision 필드 -->
-            <label for="id_decision">결정사항:</label><br>
-            <input type="text" name="decision" id="id_decision" value="{{ record.decision|default:'' }}" style="width: 100%;"><br><br>
+          <!-- 비교 테이블 -->
+          {% include 'records/components/comparison_table.html' %}
 
-            <!-- disease hidden 필드 -->
-            <input type="hidden" name="disease" value="{{ record.disease|default:'' }}">
-
-            <!-- job hidden 필드 -->
-            <input type="hidden" name="job" value="{{ record.job|default:'' }}">
-
-            <!-- URL 필드들 제거 (Django 폼에서 자동 처리) -->
-
-            <!-- 확인 체크박스들 -->
-            <input type="checkbox" name="disease_confirmed" {% if record.disease_confirmed %}checked{% endif %}> 질병 확인<br>
-            <input type="checkbox" name="job_confirmed" {% if record.job_confirmed %}checked{% endif %}> 직종 확인<br>
-            <input type="checkbox" name="exposure_confirmed" {% if record.exposure_confirmed %}checked{% endif %}> 유해인자 확인<br>
-            <input type="checkbox" name="decision_confirmed" {% if record.decision_confirmed %}checked{% endif %}> 결정 확인<br>
-            <input type="checkbox" name="smry_confirmed" {% if record.smry_confirmed %}checked{% endif %}> 고찰 확인<br>
-          </div>
-
-          <!-- 기존 템플릿들 (완전히 제거 - 중복 필드 방지) -->
+          <!-- 확인 체크박스 -->
+          {% include 'records/components/confirmation_section.html' %}
 
           <div class="action-buttons">
-            <button type="submit" onclick="console.log('저장 버튼 클릭됨'); alert('저장 버튼이 클릭되었습니다!'); return true;" style="background: red; color: white; padding: 15px; border: none; font-size: 16px;">💾 저장</button>
+            <button type="submit" class="btn btn-success">💾 저장</button>
+            <a href="{% url 'record_list' %}?{{ other_params }}" class="btn btn-secondary">취소</a>
+          </div>
 
-            <!-- 테스트 버튼 -->
-            <button type="button" onclick="document.querySelector('form').submit(); alert('강제 제출!');" style="background: blue; color: white; padding: 15px; border: none; font-size: 16px; margin-left: 10px;">🚀 강제 저장</button>
-
-            <a href="{% url 'record_list' %}?{{ other_params }}" class="cancel-link">취소</a>
-
-            <!-- 디버그 정보 -->
-            <div style="margin-top: 10px; padding: 10px; background: #f0f0f0; font-size: 12px;">
-              <strong>Debug:</strong><br>
-              Form Action: {% url 'record_edit' record.pk %}?{{ other_params }}<br>
-              Record ID: {{ record.pk }}<br>
-              Method: POST<br>
-              CSRF Token: {% csrf_token %}
-            </div>
-
-            <!-- Form 정보 디버그 -->
-            <script>
-              document.addEventListener('DOMContentLoaded', function() {
-                const form = document.querySelector('form[method="post"]');
-                console.log('🔍 Form element found:', !!form);
-                console.log('🔍 Form action:', form ? form.action : 'NO FORM');
-                console.log('🔍 Form method:', form ? form.method : 'NO FORM');
-
-                // Form submit 이벤트 리스너 추가
-                if (form) {
-                  form.addEventListener('submit', function(e) {
-                    console.log('🔥 Form submit event triggered!');
-                    const formData = new FormData(form);
-                    console.log('🔥 Form data entries:');
-                    for (let [key, value] of formData.entries()) {
-                      console.log(`  ${key}: ${value}`);
-                    }
-
-                    // 폼 필드들 직접 체크
-                    const allInputs = form.querySelectorAll('input, textarea, select');
-                    console.log('🔍 All form fields found:', allInputs.length);
-                    allInputs.forEach(input => {
-                      console.log(`  Field: ${input.name} = ${input.value} (type: ${input.type})`);
-                    });
-
-                    alert('Form이 제출됩니다!');
-                    // e.preventDefault(); // 주석 처리해서 실제 제출되도록
-                  });
-                }
-              });
-            </script>
           </div>
         </form>
       </div>
@@ -144,88 +86,16 @@
       };
     </script>
 
-    <!-- 메인 JavaScript (일시 비활성화 - 중복 필드 방지) -->
-    <!-- <script src="{% static 'records/js/form_scripts.js' %}"></script> -->
+    <!-- 메인 JavaScript -->
+    <script src="{% static 'records/js/form_scripts.js' %}"></script>
 
-    <!-- 디버깅용 인라인 스크립트 -->
+    <!-- 페이지 리사이저 스크립트 -->
     <script>
-      console.log('=== DEBUGGING START ===');
-      console.log('Disease input:', document.getElementById('disease_input'));
-      console.log('Disease suggestions:', document.getElementById('disease_suggestions'));
-      console.log('Disease hidden:', document.getElementById('disease_hidden'));
-      console.log('RECORD_FORM_CONFIG:', window.RECORD_FORM_CONFIG);
-
-      // 간단한 테스트
       document.addEventListener('DOMContentLoaded', function() {
-        console.log('DOM loaded, testing disease input...');
-        const diseaseInput = document.getElementById('disease_input');
-        const diseaseSuggestions = document.getElementById('disease_suggestions');
-
-        if (diseaseInput) {
-          console.log('Disease input found, adding test listeners');
-
-          // 클릭 테스트
-          diseaseInput.addEventListener('click', function() {
-            console.log('Disease input clicked!');
-          });
-
-          // 간단한 autocomplete 테스트
-          diseaseInput.addEventListener('input', async function(e) {
-            console.log('Input event:', e.target.value);
-
-            if (e.target.value.length > 0) {
-              try {
-                const config = window.RECORD_FORM_CONFIG || {};
-                const url = config.autocompleteUrl || '/api/autocomplete/';
-                const fullUrl = `${url}?field_name=disease_name&q=${encodeURIComponent(e.target.value)}`;
-                console.log('Fetching:', fullUrl);
-
-                const response = await fetch(fullUrl);
-                const data = await response.json();
-                console.log('Response:', data);
-
-                if (diseaseSuggestions && data.suggestions) {
-                  diseaseSuggestions.innerHTML = '';
-                  data.suggestions.forEach(suggestion => {
-                    const div = document.createElement('div');
-                    div.className = 'suggestion-item';
-                    div.textContent = suggestion.name || suggestion;
-                    div.style.padding = '10px';
-                    div.style.cursor = 'pointer';
-                    div.style.borderBottom = '1px solid #eee';
-                    div.addEventListener('click', () => {
-                      diseaseInput.value = suggestion.name || suggestion;
-                      diseaseSuggestions.style.display = 'none';
-                    });
-                    diseaseSuggestions.appendChild(div);
-                  });
-                  diseaseSuggestions.style.display = 'block';
-                  diseaseSuggestions.style.position = 'absolute';
-                  diseaseSuggestions.style.background = 'white';
-                  diseaseSuggestions.style.border = '1px solid #ddd';
-                  diseaseSuggestions.style.zIndex = '9999';
-                  diseaseSuggestions.style.maxHeight = '200px';
-                  diseaseSuggestions.style.overflow = 'auto';
-                }
-              } catch (error) {
-                console.error('Fetch error:', error);
-              }
-            } else {
-              if (diseaseSuggestions) {
-                diseaseSuggestions.style.display = 'none';
-              }
-            }
-          });
-        } else {
-          console.error('Disease input NOT found!');
-        }
-
-        // 🎡 **SCROLL WHEEL RESIZER SYSTEM (600px start) - TOP POSITION**
+        // 🎡 **SCROLL WHEEL RESIZER SYSTEM (600px start)**
         const resizer = document.getElementById('resizer');
         const mainWrapper = document.querySelector('.main-wrapper');
         const pdfSection = document.querySelector('.pdf-section');
-
-        console.log('🎡 Initializing TOP RESIZER system...');
 
         if (resizer && mainWrapper && pdfSection) {
           let currentPdfWidth = 600; // 초기값
@@ -255,7 +125,6 @@
             mainWrapper.style.gridTemplateColumns = `${clampedWidth}px 1fr`;
             currentPdfWidth = clampedWidth;
 
-            console.log(`🎡 TOP Resize: ${clampedWidth}px`);
             return clampedWidth;
           }
 
@@ -287,14 +156,12 @@
             isHoveringResizer = true;
             resizer.style.background = 'linear-gradient(90deg, #28a745 0%, #20c997 50%, #28a745 100%)';
             resizer.style.cursor = 'grab';
-            console.log('🎡 Hovering resizer - scroll to resize!');
           });
 
           resizer.addEventListener('mouseleave', function() {
             isHoveringResizer = false;
             resizer.style.background = 'linear-gradient(90deg, #e2e8f0 0%, #cbd5e0 50%, #e2e8f0 100%)';
             resizer.style.cursor = 'col-resize';
-            console.log('🎡 Left resizer');
           });
 
           // 🎡 **Add scroll event listener**
@@ -312,11 +179,6 @@
               updatePdfWidth(getCurrentPdfWidth() + 50);
             }
           });
-
-          console.log('✅ SCROLL WHEEL Resizer initialized! Starting at 600px');
-          console.log('💡 Hover over resizer and use mouse wheel to resize!');
-        } else {
-          console.error('❌ Failed to initialize resizer');
         }
       });
     </script>
