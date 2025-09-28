@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#302183' class='nav-link mb-2'>개요</a>
+<a href='#302184' class='nav-link mb-2'>신청인주장</a>
+<a href='#302185' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#302186' class='nav-link mb-2'>인정사실</a>
+<a href='#302187' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2021 판정 제 704호 (7400):(740020210000704)</h2>
+<h2 id='302183'>개요</h2>
+<p style='margin-left: 20px;'>주문 <br><b>	</b> <br><b>	</b>○ 신청인이 요양급여 신청한 상병 "벨마비"는『산업재해보상보험법』에 따른 업무상 질병으로 불인정된다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○장의 업무상 질병 인정 여부 판정 요청((기타 개인정보 생략), 2021.05.18.관련)<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 신청인은 ○○○○㈜○○에서 생산직으로 근무하던 중 안면마비 증상이 발생하였고 병원에 내원하여 검사결과, 신청 상병으로 진단받고 요양급여 신청을 하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='302184'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인은 입사 당시 커피팀에서 근무한다고 들었으나 7월경 사전 협의도 없이 갑작스러운 지원 형태로 분유팀 크리머 조제 업무를 하게되었고 분유팀 공정의 체감온도는 40도~50도의 고온임에도 에어컨도 없이 고온다습한 환경에서 8시간씩 근무하였고, 발병 이전 업무시간이 16시간이 넘는 과로를 하여 수면 부족, 커피공정에서의 상급자의 이유없는 괴롭힘으로 인한 스트레스 등으로 안면마비가 발생한 것으로 업무상 재해로 인정되어야 한다는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='302185'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서 신청인의 근무형태, 작업환경, 진료기록, 검사결과, 신체조건, 건강상태 등을 종합하여 검토한 심의회의 결과, 위원들의 의견은 다음과 같다. <br><b>	</b><br><br><b>	</b>○ 재해자는 만 30세 남성으로 ○○○○(주)○○에서 생산직근로자로 근무하던 중 안면마비 증상이 나타다 병원에 내원하여 검사결과, 신청 상병으로 진단받고 업무상 재해에 해당한다며 요양급여 신청을 한 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ 신청인이 산재보험 요양급여 신청한 상병의 확인과 관련하여, 회의에 참석한 임상의사는 제출된 의무기록 일체를 검토한 바, 벨마비의 소견은 합당하다는 의견이나, 벨마비의 발병원인은 현대의학상으로 명확히 밝혀지지 않은 상태로 주로 바이러스 감염에 의해 발생하는 질병이라는 소견이고, <br><b>	</b><br><br><b>	</b>○ 직업환경의학적으로도 발병 전 업무상의 과로가 있었다고 보기 어렵고 상병은 업무와 관련이 없는 개인질병으로 판단되므로 신청 상병과 업무와의 상당인과관계를 인정하기 어렵다는 것이 회의에 참석한 위원들의 일치된 의견이다. <br><b>	</b><br><br><b>	</b>나. 따라서, 신청인이 요양급여 신청한 상병“벨마비”는 『산업재해 보상보험법』 제37조 제1항 제2호에 의한 업무상 질병으로 불인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='302186'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로관계 및 업무내용 <br><b>	</b><br><br><b>	</b>○ 근로관계<br><b>	</b>- 신청인은 ○○○○(주)○○에 2020. 2. 28. 입사하여 생산직근로자로 근무하였으며, 근무형태는 상용직, 주 5일제, 3교대 근무한 것으로 조사되었다. <br><b>	</b><br><br><b>	</b>○ 담당업무<br><b>	</b>- 커피 및 분유 생산공정 커피 배합, 크리머 조제, 커피 포장 등 업무 수행 <br><b>	</b><br><br><b>	</b>○ 업무내용<br><b>	</b>( 발병 이전 )<br><b>	</b>- 2020. 02. 28.~2020. 04. 25.(49일) / 커피 포장 / 커피포장실 대박스 업무<br><b>	</b>- 2020. 04. 26.~2020. 05. 04.(7일)  / 커피 배합 / 커피 배합실 크리머 붓기 업무<br><b>	</b>- 2020. 05. 05.~2020. 06. 24.(24일) / 크리머 조제 / 크리머 조제 OJT 3일, 크리머 조제 업무<br><b>	</b>- 2020. 06. 25.~2020. 08. 06.(36일) / 커피 배합 / 커피 배합실 크리머 붓기 업무<br><b>	</b>( 발병 이후 )<br><b>	</b>- 2020. 08. 07.~2020. 08. 08.(2일) / 크리머 조제 / 크리머 조제 업무<br><b>	</b>- 2020. 08. 18.(1일) / 커피 배합 <br><b>	</b><br><br><b>	</b>○ 발병이전 업무내용<br><b>	</b>- 2020. 08. 08.(토) 05:55~14:31 / 퇴근 후 오후 3시경 한의원에 내원하여 침치료 받음<br><b>	</b>- 2020. 08. 07.(금) 05:55~22:33 / 업무 중 19:00경 한쪽 눈이 뻐근하고 양치할 때 헹굴 때 물이 한쪽으로 셈<br><b>	</b>- 2020. 08. 06.(목) 14:00~22:31 / 커피믹스 공정에서 통상의 업무 수행(주간)<br><b>	</b>- 2020. 08. 05.(수) 14:00~22:31 / 커피믹스 공정에서 통상의 업무 수행(주간)<br><b>	</b>- 2020. 08. 04.(화) 22:01~06:31 / 커피믹스 공정에서 통상의 업무 수행(야간)<br><b>	</b>- 2020. 08. 03.(월) 21:57~06:31 / 커피믹스 공정에서 통상의 업무 수행(야간)<br><b>	</b>- 2020. 08. 02.(일) / 휴무일 <br><b>	</b><br><br><b>	</b>○ 발병이전 주당 평균 업무시간<br><b>	</b>- 발병 이전 1주간 : 55.5시간<br><b>	</b>- 발병 이전 3개월 : 579시간(주당 평균 업무시간 48.3시간 정도) <br><b>	</b><br><br><b>	</b>나. 기타 조사내용 <br><b>	</b><br><br><b>	</b>○ 신체조건 : 신장 180cm, 몸무게 80kg <br><b>	</b><br><br><b>	</b>○ 흡연력 : 12년(1일 1/3갑) <br><b>	</b><br><br><b>	</b>○ 음주력 : 12년(1주 1회, 1회 소주 2병) <br><b>	</b><br><br><b>	</b>○ 운동 및 취미생활 : 헬스<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='302187'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>가. 상병관련 진료내역 <br><b>	</b><br><br><b>	</b>○ 이전 건강보험 수진내역<br><b>	</b>- 특이사항 없음. <br><b>	</b><br><br><b>	</b>○ 진료기록(2020. 8. 8. ○○○○)<br><b>	</b>- facial palsy - 1일전 19:00. 오른쪽 얼굴 부위 마비 있어 내원.<br><b>	</b>- 진단 : Bell’s plasy. Rt <br><b>	</b><br><br><b>	</b>○ 진료기록(2020. 11. 20. ○○)<br><b>	</b>- 벨마비, 공장에서 3교대 근무(덥고 습한 환경)를 하다가 자고 일어나면서 입술 주위의 둔한 감각이 나타남. 점차 마비감이 눈쪽으로 퍼지면서 우측 안면 마비되었다고 함. <br><b>	</b><br><br><b>	</b>나. 의학적 소견 <br><b>	</b><br><br><b>	</b>○ 주치의사(요양신청서)<br><b>	</b>- 상기 환자 상병 진단하에 우측 안면마비에 대한 보존적 치료 시행하였다. <br><b>	</b><br><br><b>	</b>○ 자문의사<br><b>	</b>- 의무기록상 우측 안면신경마비 확인된다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

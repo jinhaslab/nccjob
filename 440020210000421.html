@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#161184' class='nav-link mb-2'>개요</a>
+<a href='#161185' class='nav-link mb-2'>신청인주장</a>
+<a href='#161186' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#161187' class='nav-link mb-2'>인정사실</a>
+<a href='#161188' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2021 판정 제 421호 (4400):(440020210000421)</h2>
+<h2 id='161184'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청인이 요양급여 신청한 상병 “우측 회전근개 파열, 좌측 회전근개 파열”은 「산업재해보상보험법」에 따른 업무상 질병으로 인정된다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○ (기타 개인정보 생략)(2021.05.20.)<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>가. 신청인은 상기 사업장에 입사하여 자재 납품을 위해 목재 파레트를 적재한 후 결박하기 위해 밧줄을 던져 올리는 작업을 수행하면서 어깨에 통증을 느껴 내원한 의료기관에서 신청 상병을 진단받고 요양급여신청서를 제출하였다. <br><b>	</b> <br><b>	</b>나. 이에 심의의뢰기관에서는 신청 상병에 대하여 우리 위원회로 업무상 질병 판정심의를 의뢰하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='161185'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장<br><b>	</b>- 신청인은 자재 납품을 위해 화물차에 3~4m 높이로 적재된 목재 파레트를 결박하기 위해 무거운 밧줄을 하루에 5~6번씩 던져 올리는 작업으로 어깨에 부담이 되어 신청 상병이 발병하였다는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='161186'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서는 신청인의 연령, 신체조건, 재해경위, 경력, 작업환경, 작업 종사기간 및 근무시간, 작업내용, 작업 동영상, 과거병력, 진료기록, 신청인 및 사업주의 확인서 등 일체를 검토한 결과,<br><b>	</b>- 제출된 MRI 등 영상자료 상 양측 견관절의 만성적인 변화와 함께 신청 상병이 확인된다.<br><b>	</b>- 또한 신청인이 상기 사업장에 입사하기 이전에 수행한 페인트 납품업무나 플라스틱 등 재활용 열처리 작업에서 중량물 취급이나 어깨를 거상한 작업 등 어깨 부담작업이 확인되고, 신청인이 수행한 밧줄 결속작업 시 노출빈도는 적으나 어깨에 강한 힘이 들어가는 작업이 확인되며, 이러한 작업을 장기간 수행해 오면서 양측 견관절의 퇴행성 변화가 자연경과적 변화보다 더욱 빠르게 진행되어 신청 상병이 발병하였을 것으로 판단되므로 업무 관련성이 인정된다는 것이 참석 위원의 일치된 의견이다 <br><b>	</b><br><br><b>	</b>나. 따라서, 신청인이 요양급여 신청한 상병 “우측 회전근개 파열, 좌측 회전근개 파열”은  업무상 질병으로 인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='161187'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로관계 및 업무내용<br><b>	</b>- 입사일자: 2015.05.11.<br><b>	</b>- 담당업무: 자재 납품업무<br><b>	</b>- 근무형태: 고정 주간근무, 1주 평균 6일 근무<br><b>	</b>- 근무시간: 1일 평균 8시간 근무<br><b>	</b>- 휴게시간: 점심시간 60분, 휴식시간 1일 2회(1회 10분) <br><b>	</b><br><br><b>	</b>나. 담당업무 및 신체부담 업무내용 <br><b>	</b><br><br><b>	</b>○ 구체적인 담당업무<br><b>	</b>- 신청인은 생산된 목재 파레트를 화물차에 지게차로 적재하여 납품하는 업무를 수행하였음 <br><b>	</b><br><br><b>	</b>○ 신체부담 업무내용<br><b>	</b>[밧줄 결속작업]<br><b>	</b>- 작업방법: 5톤 트럭에 지게차를 이용하여 적재된 자재를 고정하기 위해 밧줄을 트럭 한 면에 고정하고 반대편으로 던져 넘긴 후 힘을 주어 팽팽하게 당겨 고정하는 작업<br><b>	</b>- 작업시간: 1일 평균 2시간<br><b>	</b>- 취급물품: 밧줄(무게 3~5kg, 길이 10m)<br><b>	</b>- 작업량: 1일 평균 5~6회 납품, 1회 납품 시 7~8회 결속작업 수행 <br><b>	</b><br><br><b>	</b>다. 기타 조사내용 <br><b>	</b><br><br><b>	</b>○ 직업력<br><b>	</b>- 1998.10.01.~2000.03.31. ○○○○○, 납품업무<br><b>	</b>※ 신청인은 1985년부터 1999년까지 □□□□□대리점에서 납품업무를 수행하였다는 주장이나 객관적인 자료로 확인되는 이력은 1998.10.01.~2000.03.31.임<br><b>	</b>※ 작업내용: 페인트 통을 직접 들어 1톤 트럭에 싣고 배달하는 작업, 납품할 양이 많으면 트럭에 2~3단씩 높게 쌓아 납품하였으며, 페인트 통은 15~50kg 정도였다는 진술임. 1일 10시간 이상 근무하였고, 1일 10개 정도 업체에 납품하였으며, 업체 당 약 15~60개를 납품하였다고 함<br><b>	</b>- 2000.04.26.~2000.07.27. △△△△(주)<br><b>	</b>- 2000.08.01.~2001.04.01. ◇◇◇◇◇<br>        <br><b>	</b>- 2001.04.04.~2005.02.18. △△△△(주)<br><b>	</b>- 2005.03.10.~2014.06.01. 영광화학, 플라스틱 등 재활용 열처리 작업<br><b>	</b>※ 수거된 비닐, 플라스틱 등의 폐기물이 쌓여 있는 곳에서 직접 손으로 끌어내려 허리~가슴 높이 정도의 성형(압출)기계에 넣고 열을 가해 녹이는 작업과 지게차 운전을 수행하였고, 폐기물의 무게는 약 10~15kg이며, 1일 8시간, 주 6일 근무하였다는 진술임 <br><b>	</b><br><br><b>	</b>○ 신체조건 등<br><b>	</b>- 키: 169cm, 몸무게: 67kg, 오른손잡이<br><b>	</b>- 운동 및 취미활동: 달리기(조깅)<br><b>	</b>- 현장조사실시여부: 실시 <br><b>	</b><br><br><b>	</b>라. 업무관련성 평가<br><b>	</b>- 평가결과: 업무관련성‘낮음’<br><b>	</b>- 판단근거: 일부 작업(던지기)에서 강한 힘이 들어가는 작업이 있으나 전체 근무 중 단시간 작업에 해당하고, 거상 상태의 장시간 작업이나 중량물의 과도한 운반 등은 관찰되지 않아 상기 질환의 업무 관련성은 낮음<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='161188'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>가. 진료기록<br><b>	</b>- 2020.10.22. 내원한 ○○○○의 경과기록 상 “위치: 우측 견관절 통증, 양상: 우리함”으로 기록된 내용이 확인됨 <br><b>	</b><br><br><b>	</b>나. 건강보험 수진 내역<br><b>	</b>- 2016.07.09. ○○, 어깨관절의염좌및긴장 <br><b>	</b><br><br><b>	</b>다. 주치의사 소견<br><b>	</b>- 내원 당시 양측 견관절 무리하게 사용하는 직업 이후 발생한 통증을 호소하여 검사 결과 신청 상병을 진단하였고, 경과 관찰 후 수술적 치료 고려함 <br><b>	</b><br><br><b>	</b>라. 자문의사 소견<br><b>	</b>- 의무기록 및 영상자료 확인 결과 신청 상병 인지되며, 직업력 검토가 필요함<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#77784' class='nav-link mb-2'>개요</a>
+<a href='#77785' class='nav-link mb-2'>신청인주장</a>
+<a href='#77786' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#77787' class='nav-link mb-2'>인정사실</a>
+<a href='#77788' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2018 판정 제 159호 (3400):(340020180000159)</h2>
+<h2 id='77784'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청 상병 중 “추간판탈출증 요추1/2번간, 척추관협착증 요추4/5번간”은 업무상 질병으로 인정하나, “척추관협착증 요추1/2번간, 추간판탈출증 요추4/5번간” 은  업무상 질병으로 불인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            (기타 개인정보 생략)에 따른 업무상질병 인정 여부 판정 요청<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 신청인은 2017.10.14.(토) ○○○호선 내 작업중 멤브레인 커버시트 자재를 들어올리는 중 허리가 뜨끔하였고, 2주간 사내 물리치료를 하였으나 차도가 없어 내원하여 2017.11.03. MRI촬영 후 신청상병으로 진단받고 최초요양급여 신청하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='77785'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인은 중량물 작업 및 허리에 부담이 되는 불편한 자세, 노면이 좋지 못한 도로에서 지게차 및 고소작업차 운전 등으로 누적되어 신청상병이 발병하였다는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='77786'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>○ 우리 판정위원회에서 신청인의 연령, 신체조건, 요양급여 신청경위, 경력, 상병 치료경위 및 경과, 작업환경, 작업 종사기간 및 근무시간, 작업 내용, 과거 병력, 진료기록, 신청인 및 사업주의 진술내용 등 조사된 내용을 토대로 심의한 결과, <br><b>	</b><br><br><b>	</b>○ “추간판탈출증 요추1/2번간, 척추관협착증 요추4/5번간”은 2017.11.03. L-spine MRI상 L1-2 좌측으로 추간반 탈출소견 및 요추4-5번간 협착 소견 확인되며, 과거 약 8년간 수행했던 반목레벨 작업 및 지게차운전에서 중량물 취급 및 전신진동 노출 등 허리 부담작업 확인되며, 이후 수행한 선박블록 테이핑 및 마킹 작업에서도 허리 굴곡 등의 부담작업 확인되므로 지속적인 허리 부담작업에 노출된 것으로 판단되어 상병과 업무와의 상당인과관계가 인정된다는 것이 위원들 공통된 의견이고,<br><b>	</b>“척추관협착증 요추1/2번간, 추간판탈출증 요추4/5번간”은 신청상병 인지되지 않는다는 공통된 의견이다. <br><b>	</b><br><br><b>	</b>○ 이상의 사실 및 의학적 소견 등을 종합하여 판단해 보면, 신청인의 요양급여 신청 상병 중 “추간판탈출증 요추1/2번간, 척추관협착증 요추4/5번간”은 업무상 질병으로 인정하나, “척추관협착증 요추1/2번간, 추간판탈출증 요추4/5번간”은 산업재해보상보험법 제37조 제1항 2호에 의한 업무상질병으로 불인정한다. <br><b>	</b></p>
+<hr>
+<h2 id='77787'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실<br><b>	</b>심의의뢰기관 조사내용에 의하면, <br><b>	</b><br><br><b>	</b>○ (근무형태 및 근무이력) 신청인은 재해일 기준 만 34세(180cm, 90kg)의 남성으로,  현 소속사업장에는 2006.04.03.에 입사하여 근무하였고, 근무형태는 주간근무로 근무시간은 08:00~17:00(하루평균 1시간 연장근무, 월 2~3회 정도 휴일근무)이며, 휴게시간은 점심시간 1시간, 저녁시간 30분 및 1일 2회 10분씩 휴식시간으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (업무내용 및 신체부담정도)<br><b>	</b>- 신청인은 2006.04.03.~2014.06.26. 기간동안 반목레벨작업(서포트 포함) 및 지게차운전업무를 수행하였는데, 작업할 블록이 놓일 지주 위에 반목을 올리고 지주의 위치를 조정(해머로 치는 작업)하는 작업으로 주로 2인 1조로 수행하고, 지주와 반목 등의 운반을 위한 지게차 운전도 같이 수행하였으며, 작업 전반에 걸쳐 허리를 구부리거나 뒤로 젖힌 상태이며, 허리를 구부린 상태에서의 정적자세나 반복작업은 확인되지 않으나 반목 운반시 인력으로 2인이 같이 들고 이동하므로 허리를 비튼 상태로 이동하는 자세가 확인되고, 이때 반목을 쌓아둔 위치부터 지주까지의 위치가 최소 5m~수십m에 해당하며, 운반한 반목을 지주에 놓을 때 허리를 뒤로 젖히는 상태 있으며, 특히 반목과 서포트 레벨작업시 해머를 쳐서 위치를 조정할 때 허리를 비튼 상태에서 허리에 힘을 주고 타격하는 것이 확인되며, 반복과 지주 운반을 위한 지게차 운전시 전신 진동 있으며, 운전석의 승차감이 좋지 않으며 크레인 레일 등이 있어서 바닥이 고르지 못한 상태인 것으로 확인되며, 해머(6kg)와 반목(5~15kg) 취급횟수는 하루 평균 20~100회 정도로 취급하였고,<br><b>	</b>- 2014.06.27.이후부터는 테이핑 및 마킹작업을 수행하였는데, 도면을 보고 선박블록에 테이프를 붙이거나 마킹하는 작업으로 블록에서 작업시는 허리를 굽힌 자세, 고소작업차 탑승시는 허리를 뒤로 젖힌 자세 확인되나 정적자세나 반복작업에는 해당하지 않으며, 허리를 비틀거나 꺾인 상태는 일부 확인되며, 고소작업차 탑승시 하루 평균 2시간 정도 전신진동에 노출된다는 진술이나 전신진동에 노출은 해당하지 않으나 다만 공중에 떠있으므로 바닥이 불안정한 상태에서의 작업을 수행한 것으로 심의의뢰기관 조사내용에서 확인된다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='77788'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ (건강보험 수진내역) 신청인의 과거 10년간 건강보험 수진내역상 신청 상병과 관련하여 진료 받은 이력은 없는 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (주치의사) 신청인의 주치의사는 ‘요통 및 하지방사통으로 시행한 MRI 검사에서 상병명 진단하에 본원에서 2017.11.27 미세현미경하 디스크 및 협착제거술 시행 받고 현재 보존적인 치료 및 경과관찰중인 환자입니다. 수술 소견상 디스크 파열은 연성디스크 파열에 의한 급성 신경압박 소견 관찰되었습니다. 경과 관찰 후 재진을 요합니다.’라는 상병상태에 대한 종합소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (자문의사) 심의의뢰기관 자문의는 ‘2017.11.03. L-spine MRI상 L1-2 좌측으로 심한 추간판 파열, 신경강이 좁아진 소견으로 재해 후 환자의 증상과 일치됨. L4-5 전반적인 퇴행성 변화 동반한 추간판탈출. 척추강이 좁아진 소견으로 업무력 조사 후 판정.’이라는 소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (전문가평가) 심의의뢰기관 직업환경의학 전문의는 ‘8년여동안 지게차 운전 및 반목 운반작업을 하였고 3년여 동안 테이핑 및 마킹작업을 하였습니다. 본 업무는 지게차 운전시 노면의 상태 등으로 인하여 전신진동이 있고, 반목 운반작업시 중량물 취급 및 요추부 굽힘과 신전이 반복되어 업무상 요추부 부담이 상당부분 있습니다. 따라서 업무 내용이나 기간을 미루어 볼 때 업무 관련성이 높다고 판단됩니다.’라는 소견이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

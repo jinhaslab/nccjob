@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#89872' class='nav-link mb-2'>개요</a>
+<a href='#89873' class='nav-link mb-2'>신청인주장</a>
+<a href='#89874' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#89875' class='nav-link mb-2'>인정사실</a>
+<a href='#89876' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2018 판정 제 600호 (3400):(340020180002600)</h2>
+<h2 id='89872'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청 상병 “경추 5-6번 추간판 탈출증, 경추 6-7번 추간판 탈출증”은  업무상 질병으로 인정하고 신청 상병 “경추 4-5번 추간판 탈출증”은 업무상 질병으로 불인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            (기타 개인정보 생략)에 따른 업무상질병 인정 여부 판정 요청<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 신청인은 2003.10월부터 2017.07.31.까지 조선소에서 사상작업에 종사하면서 에어맨(보호기)를 머리에 쓰고 좁은 공간 등에서 부자연스러운 자세로 작업하였고, 1일 2~3회 많게는 5~6회 정도 머리를 부딪치며 목이 젖혀지는 등 신체에 부담을 주는 작업으로 신청 상병이 발병하였다며 최초요양급여신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='89873'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인은 14년 동안 사상업무에 종사하면서 목에 무리가 와서 신청 상병이 발병하였다는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='89874'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서 신청인의 연령, 신체조건, 요양급여 신청경위, 경력, 상병 치료경위 및 경과, 작업환경, 작업 종사기간 및 근무시간, 작업 내용, 과거 병력, 진료기록, 신청인 및 사업주의 진술내용, 소위원회 심의 결과 등 조사된 내용을 토대로 심의한 결과는 다음과 같다. <br><b>	</b><br><br><b>	</b>○ 신청 상병 “경추 5-6번 추간판 탈출증, 경추 6-7번 추간판 탈출증”은 상병 인지되고, 신청인의 작업력에서 좁은 공간에서 작업하며 위보기 작업 등으로 경추부담은 있었을 것으로 보이나 업무를 떠난지 약 1년 3개월이 지났으며, 진료기록에서 “역기를 들다가 허리 및 어깨통증 발생, 3일 뒤에 고개를 들기 힘들 정도의 통증”의 기록을 볼 때 신청 상병과 업무와의 상당인과관계가 인정되지 않는다는 소수 의견이 있고, 신청인이 약 14년간 조선소에서 사상업무를 수행하면서 목의 굴곡, 신전 및 뒤틀림의 지속 또는 반복 등 업무와 관련된 경부부담 요인들이 확인되므로 신청 상병과 업무와의 상당인과관계가 인정된다는 것이 위원들 다수의 의견이다. <br><b>	</b><br><br><b>	</b>○ 소위원회 및 심의회의 등을 거쳐 상병상태를 확인한 바, 신청 상병 “경추 4-5번 추간판 탈출증”은 상병 인지되지 않아 업무관련성이 낮다는 것이 위원들의 공통된 의건이다. <br><b>	</b><br><br><b>	</b>나. 따라서 신청인의 요양급여 신청 상병 “경추 5-6번 추간판 탈출증, 경추 6-7번 추간판 탈출증”은 산업재해보상보험법 제37조 제1항 제2호에 의한 업무상 질병으로 인정하고, 신청 상병 “경추 4-5번 추간판 탈출증”은 업무상 질병으로 불인정한다. <br><b>	</b></p>
+<hr>
+<h2 id='89875'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실<br><b>	</b>심의의뢰기관 조사내용에 의하면, <br><b>	</b><br><br><b>	</b>○ (근무경력) 신청인은 진단일 기준 만 61세 남성(170cm, 65kg, 오른손잡이)으로 동사업장에 2015.08.07. 입사하여 2017.07.31. 퇴사하기까지 약 1년 11월간 사상업무를 수행하였음이 확인된다. <br><b>	</b><br><br><b>	</b>○ (과거직력) 4대보험 자료 등으로 확인되는 신청인의 과거직력은 다음과 같다.<br><b>	</b>- 2012.03.05.~2015.08.06.(약 3년 5월), ○○ : 사상업무<br><b>	</b>- 신청인은 자영업을 하다가 1997년부터 약 1년 6개월 정도 택시 운전을 하였으며, 1999.1월에 사고가 나서 2000.1월까지 산재로 요양을 하고 이후 건설현장에서 레미콘 타설 보조업무를 하였으며, 2003. 10월부터 사상업무를 수행하였다는 진술이다. <br><b>	</b><br><br><b>	</b>○ (근무형태) 신청인은 주간고정근무자로 근무시간은 08:00~18:00, 식사시간은 12:00~13:00, 휴게시간은 1일 2회, 각 10분씩인 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (업무내용 및 신체부담 작업)<br><b>	</b>1) 신청인은 연마석이 부착된 에어그라인더를 사용하여 용접부와 취부연결부를 갈아내는 작업을 하였으며, 작업시 머리보호구(에어맨, 1Kg)를 착용하였고 선박블록 내의 협소한 공간에서 쪼그린 자세로 작업하면서 하루에 2~3회 또는 많게는 5~6회 정도 머리가 부딪치면서 목이 젖혀졌으며,<br><b>	</b>2) 서거나 앉거나 쪼그린 자세로 선박 블록내에서 고개를 들어 위를 보고 하는 작업 50%, 아래 및 앞을 보고 하는 작업이 20-30% 정도 비중<br><b>	</b>3) 사용하는 공구 : 에어그라인더(1.5Kg), 7인치 에어그라인더(3~4kg)<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='89876'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ (건강보험 수진내역 등) 신청인의 과거 10년간 건강보험 수진내역에서 신청 상병과 관련하여 진료 받은 이력은 다음과 같이 확인된다.<br><b>	</b>- 2011.07.07.~2011.07.09.(2회), ○○, “경추의염좌및긴장” <br><b>	</b><br><br><b>	</b>○ (산재 이력) 과거 산재 (불)승인 이력은 다음과 같이 확인된다.<br><b>	</b>- 요양기간 1999.01.28.~2000.11.18., 승인상병 “뇌좌상, 뇌진탕, 열상 안면부 양측 수배부, 다발성 늑골골절(우측 3,4,5,6,7), 혈기흉, 우측 대퇴부 좌상 및 찰과상, 경추부 염좌 및 좌상, 경추간판탈출증 제4-5”, 장해 14급 결정<br><b>	</b>- 요양기간 2002.03.08.~2002.04.04., 승인상병 “우 족부 염좌” <br><b>	</b><br><br><b>	</b>○ (주치의사) 신청인의 주치의사는 “뒷목 통증 및 상지방사통 지속되고 있어 물리치료 및 약물치료 중이며 증상 악화시 수술적 치료 요하는 상태임. 호소하는 추간판 탈출증의 발병이 근무 이력 및 작업환경과 작업자세에서 기인한 것으로 발병한 상병과의 인과관계가 있을 것으로 사료됩니다”라는 소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (자문의사) 심의의뢰기관 자문의는 “신청 상병 인지되며 작업력 조사요함”이라는 소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (전문가평가) 심의의뢰기관 직업환경의학 전문의는 “조선소에서 사상작업을 약 14년 정도 수행한 자로 목의 굴곡 신전 회전 등의 작업자세와 목을 부딪치는 경우도 많음. 전체적으로 목의 부담이 많은 작업을 반복하여 업무관련성 높을 것으로 사료됨”이라는 평가이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#120637' class='nav-link mb-2'>개요</a>
+<a href='#120638' class='nav-link mb-2'>신청인주장</a>
+<a href='#120639' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#120640' class='nav-link mb-2'>인정사실</a>
+<a href='#120641' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2020 판정 제 127호 (3400):(340020200003127)</h2>
+<h2 id='120637'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청 상병 “섬유증을 동반한 기타 간질성 폐질환”은 「산업재해보상보험법」상 업무상질병으로 불인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○ (기타 개인정보 생략)(2020.11.17.)<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 재해근로자는 재해일 기준 만 67세의 여성으로 1988.11.01.부터 1995.06.09.까지 상기 사업장에서 전기 및 전자부품 조립 업무 등을 담당하였으며, 퇴직 후 2011.03.01. 신청 상병 진단 받고 ○○○ 및 ○○○○ 등에서 치료 하였으나 2020.02. 02. 사망하여 유족급여 및 장의비청구서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='120638'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인은 재해근로자가 8년간 수행한 전자기기 기판의 납땜, 신나 세척 및 본드 작업 등으로 인하여 신청 상병 발병하였다고 주장한다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='120639'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 판정위원회에서 재해근로자의 연령, 신체조건, 경력, 상병 치료경위 및 경과, 작업환경, 작업 종사기간, 작업 내용, 과거병력, 진료기록 등 조사된 내용을 토대로 심의한 결과는 다음과 같다. <br><b>	</b><br><br><b>	</b>○ 재해근로자는 1988.11.01.부터 1995.06.09.까지 6년 7개월 정도 전기 및 전자부품 조립 업무를 수행하였으며, 신청 상병 최초 진단일은 퇴사 후 약 14년 5개월이 지난 2009년 11월로서 이후 지속적으로 치료를 받아온 사실이 확인된다. <br><b>	</b><br><br><b>	</b>○ 신청 상병은 인지되나, 재해근로자가 수행한 전자기판 납땜, 신나 세척 및 본드 작업 등에서는 간질성 폐질환 발생 위험을 높이는 유해요인 노출은 없었거나, 있더라도 신청 상병을 발생시킬 만큼의 노출은 아니라고 판단되므로 신청 상병과 업무와의 상당인과관계가 인정되지 않는다는 것이 참석위원들 공통의 의견이다. <br><b>	</b><br><br><b>	</b>나. 따라서 신청 상병은 산업재해보상보험법 제37조 제1항 2호에 의한 업무상질병으로 불인정한다. <br><b>	</b></p>
+<hr>
+<h2 id='120640'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실<br><b>	</b>심의의뢰기관 조사 내용에 의하면, <br><b>	</b><br><br><b>	</b>○ (직력)<br><b>	</b>- 15.3.9-5.1, 14.3.3-12.10, 13.3.4-12.31, 창녕군청(노인일자리 사업) <br><b>	</b><br><br><b>	</b>○ ( 사업장 개요)<br><b>	</b>- 사업장명: ○○○○○<br>        <br><b>	</b>- 폐업일: 2002. 5. 10.<br><b>	</b>- 상시 인원: 2명<br><b>	</b>- 주 생산품: 전자부품<br><b>	</b>- 근무기간: 1988.11.1-1995.6.9<br><b>	</b>- 업무: 전자부품 조립 <br><b>	</b><br><br><b>	</b>○ (업무 내용 및 신체 부담 작업) 심의의뢰기관의 조사 내용에서 재해근로자의 업무 내용 및 신체 부담 작업 등이 아래와 같이 확인된다. <br><b>	</b><br><br><b>	</b>가. 작업환경<br><b>	</b>- 유족 주장으로 보호장구는 특별히 없었으며, 피부 노출상태로 실내에서 작업함. <br><b>	</b><br><br><b>	</b>나. 작업환경측정 여부<br><b>	</b>- 없음 <br><b>	</b><br><br><b>	</b>다. 신청인의 주장<br><b>	</b>- 재해근로자는 1986년 입사 후 1994년 퇴사 시까지 약 8년간 전기, 전자제품의 키판 조립을 수행하였음.<br><b>	</b>- 납땜 후 신나로 세척하고 본드로 부착하는 업무를 수행하였음.<br><b>	</b>- 작업장의 보호장비는 특별히 없었으며 피부 노출 하에 실내에서 작업함.<br><b>	</b>- 평소 지병이 없었으며 생활습관은 음주, 흡연 등 일체 없었으며 특별히 건강이 문제되는 바 없었음.<br><b>	</b>- 2011년 ○○○ 내원하기 시작한 후로 건강이 차츰 나빠져서 호흡이 매우 곤란하여 집에서도 산소호흡기에 의존하다가 2020.2.2. 폐섬유종에 의해 사망함. <br><b>	</b><br><br><b>	</b>○ (보험가입자 의견)<br><b>	</b>- 사업장 폐업 <br><b>	</b><br><br><b>	</b>○ (산재 이력) 재해근로자의 과거 산재 (불)승인 이력은 없는 것으로 확인된다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='120641'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ (건강보험수진내역)<br><b>	</b>- 2019.10.1./9.5./5.20./2018.4.9./2.7./2017.2.27./2016.10.24. □□□□(섬유증을 동반한 기타 간질성 폐질환)<br><b>	</b>- 2019.8.15./8.8./6.3./5.2/3.7./2018.12.13./9.3./6.18./3.26./2.2./2017.12.18./10.16./8.21./5. 22./4.30./3.20.1.23./2016.12.19./11.7./10.10./9.19./9.12./ ○○○○(섬유증을 동반한 기타 간질성 폐질환)<br><b>	</b>- 2019.2.15./2016.9.9./6.30./5.11./3.17./1.21./2015.11.24./10.1./9.4./8.7./7.10./6.10./5.13./ 4.16./3.23./2.17./1.29./1.28./1.12./2014.12.1./11.26./10.20./8.19./6.17./4.22./2.17./2013.10.25./8.28./7.15./5.20./5.14/3.12./1.15./2012.11.15./9.18./8.21./6.26./4.24./2.15./1.26./2011.11.25./10.28./9.22./ 9.22./△△△△△(섬유증을 동반한 기타 간질성폐질환)<br><b>	</b>- 2012.2.12./2011.9.22./7.21./6.13./1.18./2010.6.1./2010.5.12./4.8./ ◇◇(상세불명의 간질성 폐질환)<br><b>	</b>※ ◇◇이 ◇◇◇◇◇병원으로 상호 변경<br><b>	</b>- (의료급여) 2019.11.14.∼2020.1.27. ☆☆☆☆(상세불명의 폐렴) <br><b>	</b><br><br><b>	</b>○ (질병자문 회신)<br><b>	</b>- 1988년부터 1995년까지 ○○○○○에서 전자기판 납땜, 신너 세척, 본드 작업을 하였고, 2009년 11월 간질성 폐질환 진단을 받고 사망, 고인이 근무하였던 사업장은 폐업하여 남아 있지 않기 때문에 작업장 확인은 불가능하지만 전자기판 납땜이나 세척 본드 작업을 통한 간질성 폐질환 발생 위험을 높이는 유해요인 노출은 없다고 판단되어 업무관련성 전문조사는 불필요함.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#32377' class='nav-link mb-2'>개요</a>
+<a href='#32378' class='nav-link mb-2'>신청인주장</a>
+<a href='#32379' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#32380' class='nav-link mb-2'>인정사실</a>
+<a href='#32381' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2019 판정 제 737호 (2400):(240020190001737)</h2>
+<h2 id='32377'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청인이 요양급여 신청한 상병 ‘만성폐쇄성폐질환’은 의 업무상 질병으로 인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○ (기타 개인정보 생략)(2019. 7. 11.)호에 따른 판정요청<br><b>	</b> <br><b>	</b> 신청내용<br><b>	</b>신청인은 1973. 12. 10.부터 1993. 10. 19.까지 탄광에서 굴진, 채선, 채탄 등의 업무를 수행하다 2018. 10. 19. 신청 상병으로 진단 받고 요양급여 신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='32378'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장<br><b>	</b>신청인은 갱내에서 탄층 확보를 위해 화약 장전 후 발파 작업을 시행할 때, 착암기와 콜픽 등의 진동 공구를 사용해 탄 벽을 뚫을 때  삽으로 탄을 퍼서 광차를 실을 때 등 대부분의 작업 과정에서 시야를 확보하기 힘들 정도의 다량의 분진이 발생되었고 유해분진에 노출되어 흡입하여 업무상 질병이 발병하였다고 주장하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='32379'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론<br><b>	</b>우리 위원회에서 신청 상병이 산재보험법상의 업무상 질병에 해당하는지 여부를 판단하기 위하여 발병 경위, 분진 작업 종사 이력, 진료기록 및 의학적 소견, 관련 법령 등을 종합적으로 검토한 결과는 다음과 같다.<br><b>	</b>신청인은 광업소에서 근무하며, 분진 작업으로 인하여 다량의 석탄 분진을 장기간 흡입하여 신청 상병이 발병하였으므로 업무상 질병으로 인정되어야 한다고 주장하였다.<br><b>	</b>산업재해보상보험법 시행령 별표2(업무상 질병에 대한 구체적인 인정 기준)에서는 장기간, 고농도의 석탄, 암석 분진, 카드뮴흄 등에 노출되어 발생한 만성폐쇄성폐질환을 업무상 질병으로 명시하고 있다.<br><b>	</b>구체적으로는 ① 석탄,암석 분진, 흄, 가스, 증기 등에 20년 이상 노출되거나, 노출된 기간이 20년 미만이더라도 지하 공간이나 밀폐된 공간 등에서 작업을 수행하여 만서폐쇄성폐질환이 발생하였다고 인정되고, ② 폐활량 검사에서 속효성 기관지 확장제 투여 후 1초율(FEV1/FVC)이 70% 미만이면서 1초량(FEV1)이 정상예측치의 80% 미만인 기류제한이 있는 경우에 업무상 질병으로 인정하고 있어, 신청 상병이 업무상 질병으로 인정되기 위해서는 ① 직업적 원인 물질에의 노출 수준과 ② 폐활량 검사를 통한 진단 기준을 충족하여야 할 것이다.<br><b>	</b>신청인은 약 18년간 탄광 갱내에서 채탄, 굴진 등의 업무 수행시 석탄 분진에 노출되었고, 폐활량검사에서 1초율은 70% 미만인 각각 69.6%, 69.7%이었으며, 1초량은 정상 예측치의 80% 미만인 각각 77%, 79%로 확인 되어 신청 상병의 업무상 질병 인정 기준(노출 수준과 진단 기준)에 부합한다는 것이 심의회의에 참석한 위원들의 일치된 의견이다.<br><b>	</b>따라서, 신청인이 요양급여 신청한 상병 ‘만성폐쇄성폐질환’은 산재보험법 제37조제1항제2호의 업무상 질병으로 인정된다. <br><b>	</b></p>
+<hr>
+<h2 id='32380'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실<br><b>	</b>■ 근로관계 <br><b>	</b><br><br><b>	</b>○ 사업장명: ㈜○○ / 업종: 무연탄광업 <br><b>	</b><br><br><b>	</b>○ 직종 및 직책: 광부 <br><b>	</b><br><br><b>	</b>○ 분진 사업장 근무기간<br><b>	</b>- 1973. 12. 10. ~ 1990. 3. 30.(16년 3월) 굴진/채선, □□□□, 소득금액증명 등<br><b>	</b>- 1991. 4. 28. ~ 1993. 3. 9.(1년 10월) 채선, □□□□, 국민연금<br><b>	</b>- 1993. 9. 1. ~ 1993. 10. 19.(1월) 채탄, ㈜○○, 국민연금 <br><b>	</b><br><br><b>	</b>○ 종사상지위: 상용 / 고용형태: 정규직 <br><b>	</b><br><br><b>	</b>○ 근무시간: 1일 평균 8시간, 1주 평균 6일, 1주 평균 48시간 <br><b>	</b><br><br><b>	</b>○ 현 직종 관련 총 경력: 18년 2월(굴진 등)<br><b>	</b>■ 폐기능검사 결과 <br><b>	</b><br><br><b>	</b>○ 의료기관: 근로복지공단 ○○<br>        <br><b>	</b>- 1차 검사일(2019. 4. 2.): FEV1/FVC: 69.6% , FEV1: 77%<br><b>	</b>- 2차 검사일(2019. 5. 13): FEV1/FVC: 69.7% , FEV1: 79%<br><b>	</b>■ 업무관련성 전문조사 필요성에 관한 자문 결과<br><b>	</b>- 근로복지공단 ○○ 폐기능검사에서, 폐기능 1초율 69.87%, 1초량 79%로 나타남. 직력정보, 국민연금에서 탄광 17년 근무 확인으로 조사됨 (□□□□ 16년 5개월) 소득금액 증명서에서는 1984년부터 1993년까지 9년 확인됨. 다만, 갱내 근무 여부를 확인은 진술에 근거함. 이전 진술을 근거로 10년 이상 노출되었다고 판단됨<br><b>	</b>- 업무관련성 전문조사 불필요<br><b>	</b>■ 과거력 <br><b>	</b><br><br><b>	</b>○ 산재이력<br><b>	</b>- (1989. 1. 31.) 사고성, 손/손가락, 통원 49일<br><b>	</b>- (2014. 12. 2.) 질병성, 손목터널증후군(승인), 레이노증후군(불승인), 입원 26일 통원 551일<br><b>	</b>- (2016. 3. 24.) 질병성, 감각신경성 청력 소실, 통원 16일, 장해등급 11급 5호<br><b>	</b>- (2016. 10. 6.) 질병성, 만성폐쇄성폐질환(불승인, 기준 미달) <br><b>	</b><br><br><b>	</b>○ 정밀진단 과거병력 조회<br><b>	</b>- (2006. 4. 4.) 병형 0/0 심폐기능 F0(정상)<br><b>	</b>- (2010. 6. 21.) 병형 0/0 심폐기능 F0(정상)<br><b>	</b>- (2012. 10. 9.) 병형 0/0<br><b>	</b>- (2013. 12. 20.) 병형 0/0 심폐기능 F0(정상)<br><b>	</b>- (2015. 2. 24.) 병형 0/0 심폐기능 F0(정상)<br><b>	</b>- (2016. 5. 23.) 병형 0/0 심폐기능 F0(정상)<br><b>	</b>- (2017. 8. 4.) 병형 0/0 심폐기능 F1(경도장해)<br><b>	</b>- (2018. 11. 23.) 병형 0/0 심폐기능 F0(정상) <br><b>	</b><br><br><b>	</b>○ 건강보험 수진내역<br><b>	</b>- 2008. 3. 31. 탄광부 진폐증<br><b>	</b>- 2008. 5. 27. 상세불명의 만성 기관지염<br><b>	</b>- 2012. 6. 25. 상세불명의 급성 기관지염 <br><b>	</b><br><br><b>	</b>○ 음주 및 흡연<br><b>	</b>- 음주: -<br><b>	</b>- 흡연: -<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='32381'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견<br><b>	</b>■ 폐기능검사 결과 <br><b>	</b><br><br><b>	</b>○ 의료기관: 근로복지공단 ○○<br>        <br><b>	</b>- 1차 검사일(2019. 4. 2.): FEV1/FVC: 69.6% , FEV1: 77%<br><b>	</b>- 2차 검사일(2019. 5. 13): FEV1/FVC: 69.7% , FEV1: 79%<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

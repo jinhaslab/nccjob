@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#94647' class='nav-link mb-2'>개요</a>
+<a href='#94648' class='nav-link mb-2'>신청인주장</a>
+<a href='#94649' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#94650' class='nav-link mb-2'>인정사실</a>
+<a href='#94651' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2019 판정 제 947호 (3400):(340020190000947)</h2>
+<h2 id='94647'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청 상병 “회전근개 극상건 파열, 우측, 어깨 충격증후군, 우측”은  업무상 질병으로 인정하고, “유착성 관절낭염, 우측”은 불인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            (기타 개인정보 생략)에 따른 업무상질병 인정 여부 판정 요청<br><b>	</b> <br><b>	</b> 신청내용 <br><b>	</b> <br><b>	</b>○ 신청인 2017.01.01. ㈜○○에 입사하여 조선소 내 용접업무 수행하였고, 2018년 6월경 ○○○○ 탑재 1부 현장에서 근무하던 중 어깨 통증 발생하여 물리치료 등을 받았으나 호전 없어 2019.02.12. ○○○ 내원하여 신청 상병 진단받고 최초요양급여신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='94648'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장 <br><b>	</b><br><br><b>	</b>○ 신청인 조선소 내에서 용접 업무 수행한 자로 수평, 위보기 용접, 용접기 케이블 설치, 에어호스 설치, 작업 공구 이동 녹제거를 위한 그라인더 작업, 협소한 작업구역, 반복적인 수직 사다리 타기, 로프를 이용한 작업 공구 끌어올리기, 한 자세로  장시간 작업 등의 누적으로 인하여 신청 상병 발병하였다는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='94649'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론 <br><b>	</b><br><br><b>	</b>가. 우리 위원회에서 신청인의 연령, 신체조건, 요양급여 신청경위, 경력, 상병 치료경위 및 경과, 작업환경, 작업 종사기간 및 근무시간, 작업 내용, 과거 병력, 진료기록, 신청인 및 사업주의 진술내용 등 조사된 내용을 토대로 심의한 결과는 다음과 같다. <br><b>	</b><br><br><b>	</b>○ 신청 상병 “회전근개 극상건 파열, 우측, 어깨 충격증후군, 우측”과 관련하여  상병 상태 인지된다는 의학적 소견이고, 신청인 조선소 내에서 약 24년 3개월간 용접업무 수행하였고, 작업시 어깨를 거상하거나 뻗은 자세로 그라인더 및 용접기 피더기 등의 장비를 들고 작업이 반복되므로 어깨 부담이 매우 높고, 장기간의 직력을 감안했을 때 업무와의 상당인과관계가 인정된다는 것이 위원들 공통된 의견이나, <br><b>	</b><br><br><b>	</b>○ 신청 상병 “유착성 관절낭염, 우측”은 상병 상태 인지되나 상병의 성질상 개인적 소인에 의한 업무 외 질병으로 업무와의 상당인과관계를 인정할 수 없다는 것이 위원들 공통된 의견이다. <br><b>	</b><br><br><b>	</b>나. 따라서 신청인의 요양급여 신청 상병 “회전근개 극상건 파열, 우측, 어깨 충격증후군, 우측”은 산업재해보상보험법 제37조 제1항 제2호에 의한 업무상 질병으로 인정하고, “유착성 관절낭염, 우측”은 불인정한다. <br><b>	</b></p>
+<hr>
+<h2 id='94650'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실<br><b>	</b>심의의뢰기관 조사내용에 의하면,<br><b>	</b>가) 근무형태 및 근무이력 <br><b>	</b><br><br><b>	</b>○ (근무경력) 신청인 재해일 기준 만 53세 남성(161cm, 55kg, 오른손잡이)으로 2017.01.01. ㈜○○에 입사하여 약 2년 1개월간 조선소 내 용접 업무를 수행한 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (과거직력) 4대보험 자료 및 국세청 근로소득이력 등으로 확인되는 신청인의 과거직력은 다음과 같다<br><b>	</b>- 1990.10.17.∼1991.07.30. ㈜○○ / 용접업무<br><b>	</b>- 1991.10.01.∼1991.10.31. ○○ / 용접업무<br><b>	</b>- 1991.10.28.∼1992.05.31. ㈜□□ / 용접업무<br><b>	</b>- 1995.02.19.∼1996.09.04. △△△△(주) / 용접업무<br><b>	</b>- 1996.09.02.∼1996.09.17. ◇◇◇◇◇(주) / 용접업무<br><b>	</b>- 1996.10.01.∼1997.05.15. △△△△(주) / 용접업무<br><b>	</b>- 1997.05.15.∼2001.08.26. ㈜○○ / 용접업무<br><b>	</b>- 2001.09.01.∼2007.12.31. ○○ / 용접업무<br><b>	</b>- 2008.01.01.∼2008.12.31. □□ / 용접업무<br><b>	</b>- 2010.01.01.∼2012.03.31. □□ / 용접업무<br><b>	</b>- 2012.04.01.∼2016.12.31. ○○ / 용접업무<br><b>	</b>- 신청인 현 소속사업장 포함하여 총 24년 3개월간 용접업무 수행한 것으로 확인된다. <br><b>	</b><br><br><b>	</b>○ (근무형태) 신청인 정규직, 고정주간근무, 주 6일, 근무시간은 08:00∼18:00, 식사시간은 12:00∼13:00이고, 휴게시간은 회당 10분 총 2회로 확인된다.<br><b>	</b>나) 업무내용 및 신체부담 작업내용 <br><b>	</b><br><br><b>	</b>○ (업무내용 및 작업자세) 신청인 조선소에서 수동용접 업무에 종사하였으며 작업시 취급하는 공구는 피다기 용접토치, 용접와이어, 에어호스 등으로 용접 부위 그라인더를 사용한 녹제거, 예열, 용접, 피스류 철거, 가우징 후 용접, 청소 마무리 등의 과정으로 작업 진행되며, 작업자세는 서서 위보기 자세 40%, 서서 수직사세 40%, 서서 수평자세 10%, 쪼그려 앉은 자세 5%, 엎드린 자세 5%, 어깨를 앞으로 올리기, 몸통에서 벌리기 모으기, 외회전 내회전 등이 혼재하며 접촉압박, 어깨 들림, 어깨 위로 손올린 자세, 눙운자세, 허리 굽히고 팔뻗은 자세 등이 혼재하는 것으로 심의의뢰기관 조사내용에서 확인된다. <br><b>	</b><br><br><b>	</b>○ (취급 제품 및 도구 등) 신청인 작업시 용접기 피더기, 용접 와이어(합계 20kg), 그라인더(4kg), 가우징 토치(1.5kg), 공구통(10kg)을 취급하는 것으로 확인된다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='94651'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>○ (진료기록 등) 신청인의 과거 10년간 건강보험 수진내역에서 신청 상병과 관련하여 진료받은 이력은 다음과 같이 확인된다.<br><b>	</b>- 2018.09.14. 회전근개증후군 / ○○<br>        <br><b>	</b>- 2018.12.04.∼2018.12.06. 어깨의 유착성 관절낭염 / ○○ (2회) <br><b>	</b><br><br><b>	</b>○ (주치의사) 신청인의 주치의사는 “우측 견관절 운동제한 및 통증 호소하는 상태로 내원 정밀검사 시행, 극상건 파열 소견으로 수술적 치료 시행함”이라는 종합소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (자문의사) 심의의뢰기관 자문의는 “신청 상병 인지되며 작업력 조사 요함”이라는 소견을 제시하였다. <br><b>	</b><br><br><b>	</b>○ (전문가평가) 심의의뢰기관 직업환경의학 전문의는 “조선소에서 약 14년간 용접업무를 수행한 자로 어깨를 거상하거나 뻗은 자세로 그라인더 및 용접기 피더기 등의 장비를 들고 작업이 반복되므로 업무관련성 높을 것으로 사료됨”이라는 소견을 제시하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    

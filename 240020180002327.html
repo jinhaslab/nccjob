@@ -1,0 +1,74 @@
+
+    <html>
+    <head>
+        <title>Document View</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body { font-family: Arial, sans-serif; }
+            hr { border: 1px solid #ccc; margin: 20px 0; }
+            #toggleButton {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                background-color: #ddd;
+                border: none;
+                padding: 5px;
+                cursor: pointer;
+                z-index: 2;  /* 버튼이 사이드바 위에 위치하도록 설정 */
+            }
+        </style>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var content = document.getElementById('content');
+                var toggleButton = document.getElementById('toggleButton');
+
+                if (sidebar.style.transform === 'translateX(-220px)') {
+                    sidebar.style.transform = 'translateX(0)';
+                    content.style.marginLeft = '220px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Hide Sidebar';
+                } else {
+                    sidebar.style.transform = 'translateX(-220px)';
+                    content.style.marginLeft = '20px';
+                    toggleButton.style.display = 'block'; 
+                    toggleButton.innerText = 'Show Sidebar';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar" style="width: 200px; position: fixed; height: 100%; overflow-y: auto; transition: transform 0.3s ease; z-index: 1;">
+    <br>
+    <hr>
+    <a href='#22257' class='nav-link mb-2'>개요</a>
+<a href='#22258' class='nav-link mb-2'>신청인주장</a>
+<a href='#22259' class='nav-link mb-2'>위원회판단및결론</a>
+<a href='#22260' class='nav-link mb-2'>인정사실</a>
+<a href='#22261' class='nav-link mb-2'>진료기록및의학적소견</a>
+</div>
+
+        <div id='content' class='container' style='margin-left: 220px; padding: 20px;'>
+<h2>2018 판정 제 327호 (2400):(240020180002327)</h2>
+<h2 id='22257'>개요</h2>
+<p style='margin-left: 20px;'>주문<br><b>	</b>신청인이 요양 신청한 상병 "비외상성 두개강내 출혈, 좌측 편마비, 안면마비, 보행이상, 삼킴곤란, 구음장애"을  업무상 질병으로 불인정한다.<br><b>	</b> <br><b>	</b> 청구취지<br><b>	</b><br>            ○○ (기타 개인정보 생략)(2018. 11. 1.)호에 따른 판정요청<br><b>	</b> <br><b>	</b> 신청내용<br><b>	</b>신청인은 2015년 1월 공장관리자로 입사하여 렌탈장비 정리 및 배달 등의 업무를 수행하였으며, 2018. 7. 6. 18시경 야근을 위해 직장동료와 저녁식사를 하던 중 좌측 편마비 및 의식저하를 호소하여 응급실로 이송되어 신청상병을 진단 받고 요양급여신청서를 제출하였다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='22258'>신청인주장</h2>
+<p style='margin-left: 20px;'>신청인주장<br><b>	</b>신청인은 재해 다음날 출고 장비량이 갑자기 증가하여 재해당일 하루종일 장비관리 및 출고 작업으로 육체적, 정신적으로 신경을 많이 쓴 것이 원인이 되어 신청상병이 발병하여 업무상 질병이라는 주장이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='22259'>위원회판단및결론</h2>
+<p style='margin-left: 20px;'>위원회판단및결론<br><b>	</b>우리 위원회에서 신청인의 연령, 경력, 근무환경 및 업무내용, 종사기간 및 근무시간, 진료기록, 의학영상자료 등 관련 자료를 종합적으로 검토한 결과는 다음과 같다.<br><b>	</b>신청인은 재해 다음날 출고 장비량이 갑자기 증가하여 재해당일 하루종일 장비관리 및 출고하느라 육체적, 정신적으로 신경을 많이 쓴 것이 원인이 되어 신청상병이 발병하여 업무상 질병이라는 주장이다.<br><b>	</b>제출된 의무기록 및 의학영상으로 “비외상성 두개강내 출혈”의 진단이 확인되며, “좌측 편마비, 안면마비, 보행이상, 삼킴곤란, 구음장애”는 그에 따른 합병증으로 진단된다는 의학적 소견이다.<br><b>	</b>업무내용 검토결과, 재해발생 전 24시간 이내에 업무와 관련된 돌발적이고 예측 곤란한 사건의 발생과 급격한 업무환경의 변화가 없었던 점, 발병 전 1주 동안의 업무시간은 42시간 30분, 발병 전 4주 동안 업무시간은 1주 평균 42시간 30분, 발병 전 12주 동안 업무시간은 1주 평균 42시간 30분으로 확인되어 단기 및 만성과로가 확인되지 않는 점 등을 종합적으로 고려할 때 신청상병을 유발할 만한 업무상 과로나 급격한 스트레스가 있었다고 보기 어려워 신청상병과 업무간에 상당인과관계가 인정되지 않는다는 것이 참석한 위원들의 일치된 의견이다.<br><b>	</b>이상의 사실을 종합하여 판단해 보면, 신청인이 요양급여 신청한 상병 “비외상성 두개강내 출혈, 좌측 편마비, 안면마비, 보행이상, 삼킴곤란, 구음장애”은 에 따른 업무상 질병으로 인정되지 않는다. <br><b>	</b></p>
+<hr>
+<h2 id='22260'>인정사실</h2>
+<p style='margin-left: 20px;'>인정사실 <br><b>	</b><br><br><b>	</b>가. 근로관계 <br><b>	</b><br><br><b>	</b>○ 고용형태: 상용직 / 정규직 <br><b>	</b><br><br><b>	</b>○ 직종 및 직책: 공장관리자 <br><b>	</b><br><br><b>	</b>○ 담당업무: 지게차 및 고소작업대 렌탈장비 정리정돈, 렌탈장비 배달업무 등 <br><b>	</b><br><br><b>	</b>○ 현 직장 근무기간: 약 3년 6개월(입사일: 2015. 1. 12.), 재해발생일 기준 <br><b>	</b><br><br><b>	</b>○ 근무시간 및 근무형태<br><b>	</b>- 근무일수: 주5일 근무, 토/일 휴무<br><b>	</b>- 근무시간: 08:30 ~ 18:00<br><b>	</b>- 휴게(점심)시간: 12:00 ~ 13:00 <br><b>	</b><br><br><b>	</b>나. 업무상 과로 및 스트레스 여부 <br><b>	</b><br><br><b>	</b>○ 업무상 과로 및 스트레스 여부 관련하여 소속기관에 제출된 자료는 서면문답서(신청인, 사업주)이며, 소속기관에서는 신청인 및 사업주의 진술을 토대로 일 8시간 30분을 근무하는 것으로 업무시간을 산정하였다. <br><b>	</b><br><br><b>	</b>○ 돌발상황 및 급격한 업무환경의 변화<br><b>	</b>- 재해자 및 사업장진술 일치: 재해 다음날 고소작업대 출고가 갑자기 잡혀 오후에 장비청소, 수리, 도장 작업을 급하게 하게 되었으며 퇴근시간 전까지 마무리를 하지 못해 저녁식사 후 마무리작업을 하려했고, 저녁식사 도중 증상이 발병함.<br><b>	</b>- 그외 특이사항 없음 <br><b>	</b><br><br><b>	</b>○ 단기간 동안의 업무상 부담(발병 전 1주일 이내)<br><b>	</b>- 재해자: 렌탈장비 회수가 많아 평소보다 일을 많이 함<br><b>	</b>- 사업장: 특이사항 없음<br><b>	</b>- 발병 전 1주 동안의 업무시간은 42시간 30분이며, 발병 전 12주간의 주당 평균 업무시간은 42시간 30분으로 확인되어 일상업무 시간보다 30% 이상 미증가, 일상업무 량보다 30% 이상 미증가 확인된다. <br><b>	</b><br><br><b>	</b>○ 만성적으로 과중한 업무(발병 전 4주, 발병 전 12주)<br><b>	</b>- 발병 전 4주 동안 업무시간은 1주 평균 42시간 30분으로 1주 평균 64시<br><b>	</b>간을 초과하지 않았고, 발병 전 12주 동안 업무시간은 1주 평균 42시간<br><b>	</b>30분으로 1주 평균 60시간 및 평균 52시간을 초과하지 않는다. <br><b>	</b><br><br><b>	</b>라. 과거력 <br><b>	</b><br><br><b>	</b>○ 건강보험 수진내역<br><b>	</b>- 특이사항 없음 <br><b>	</b><br><br><b>	</b>○ 건강검진결과<br><b>	</b>[ 검진일: 2016. 11. 25. ]<br><b>	</b>- 이상지질혈증, 간질환, 고혈압 의심. 고혈압  2차검진 대상<br><b>	</b>- 이상지질혈증 여부 추적 관찰 요함, 간기능 여부 추적 관찰 요함<br><b>	</b>[ 검진일: 2017. 12. 27. ]<br><b>	</b>- 이상지질혈증, 간질환, 고혈압 의심. 고혈압  2차검진 대상<br><b>	</b>- 이상지질혈증 여부 추적 관찰 요함, 간기능 여부 추적 관찰 요함 <br><b>	</b><br><br><b>	</b>마. 기타사항 <br><b>	</b><br><br><b>	</b>○ 신체조건: 키 174cm / 몸무게 72kg <br><b>	</b><br><br><b>	</b>○ 흡연 및 음주 :<br><b>	</b>- 음주 : 주 2회, 1회 1병<br><b>	</b>- 흡연 : 1일 0.5갑 / 흡연기간 12년<br><b>	</b> <br><b>	</b></p>
+<hr>
+<h2 id='22261'>진료기록및의학적소견</h2>
+<p style='margin-left: 20px;'>진료기록및의학적소견 <br><b>	</b><br><br><b>	</b>가. 진료기록<br><b>	</b>[ ○○○○○ 응급기록지 ]<br><b>	</b>P.I) 본 454세 남환 평소 혈압이 높다고 들었으나 medication 하지 않은 분으로 내원 당일 18:00 직장동료와 저녁식사를 하던 중 발생한 Left side weakness를 주소로 본원 응급실 내원하였습니다.<br><b>	</b>#C.C : left side weakness<br><b>	</b>Mentality : Drowsy<br><b>	</b>Duration : 당일 18:00<br><b>	</b>#past Hx : none<br><b>	</b>#Neurologic examination : M/S nearly alert to drowsy<br><b>	</b>Facial weakness : Lt<br><b>	</b>#Motor(Rt/Lt)<br><b>	</b>*Upper : V/I<br><b>	</b>*Lower : V/I<br><b>	</b>R/O ICH <br><b>	</b><br><br><b>	</b>나. 의학적 소견 <br><b>	</b><br><br><b>	</b>○ 주치의사:두개강내 출혈에 대해 배액관삽입술 시행 후 경과관찰 하였으며 동반된 연하장애, 보행장애, 언어장애(어눌), 좌측 편마비에 대해 신경발달재활치료 및 연하장애를 위한 재활치료 필요함.  회전근개병변 및 말초신경의 병변은 없으며 경추부 척수이상의 부위여서(뇌) 운동신경로의 병변에 의한 전달시간 지연 관찰된다는 소견이다. <br><b>	</b><br><br><b>	</b>○ 자문의사: 환자의 병명 및 영상조회(2018. 7. 6. CT)상 비외상성 두개강내 혈종 소견 보인다는 소견이다.<br><b>	</b> <br><b>	</b></p>
+<hr>
+</div>
+
+        <button id='toggleButton' class='btn btn-outline-secondary' onclick='toggleSidebar()'>Hide Sidebar</button> 
+    </body>
+    </html>
+    
