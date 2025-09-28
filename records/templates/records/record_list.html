@@ -515,7 +515,7 @@
                     <span class="confirmation-status">
                         {% if record.disease_confirmed and record.job_confirmed and record.exposure_confirmed and record.decision_confirmed and record.smry_confirmed %} ✔️ {% else %} ➖ {% endif %}
                     </span>
-                    <a href="/nccjob{% url 'record_detail' record.pk %}?{{ all_params }}" class="detail-link" title="URL: /nccjob{% url 'record_detail' record.pk %}">상세</a>
+                    <a href="{% url 'record_detail' record.pk %}?{{ all_params }}" class="detail-link">상세</a>
                 </div>
             </div>
             {% endfor %}

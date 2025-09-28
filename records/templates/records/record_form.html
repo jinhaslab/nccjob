@@ -94,7 +94,7 @@
             <!-- 테스트 버튼 -->
             <button type="button" onclick="document.querySelector('form').submit(); alert('강제 제출!');" style="background: blue; color: white; padding: 15px; border: none; font-size: 16px; margin-left: 10px;">🚀 강제 저장</button>
 
-            <a href="/nccjob{% url 'record_list' %}?{{ other_params }}" class="cancel-link">취소</a>
+            <a href="{% url 'record_list' %}?{{ other_params }}" class="cancel-link">취소</a>
 
             <!-- 디버그 정보 -->
             <div style="margin-top: 10px; padding: 10px; background: #f0f0f0; font-size: 12px;">
